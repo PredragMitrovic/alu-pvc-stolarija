@@ -1,0 +1,41 @@
+tt_content.testimonials =< lib.contentElement
+tt_content.testimonials {
+    templateName = Testimonials
+    templateRootPaths {
+        10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        10 = EXT:site_package/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:site_package/Resources/Private/Layouts/
+    }
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = testimonial1_image
+            as = testimonial1_images
+        }
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references.fieldName = testimonial2_image
+            as = testimonial2_images
+        }
+        30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        30 {
+            references.fieldName = testimonial3_image
+            as = testimonial3_images
+        }
+        40 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        40 {
+            references.fieldName = testimonial4_image
+            as = testimonial4_images
+        }
+        50 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        50 {
+            references.fieldName = testimonial5_image
+            as = testimonial5_images
+        }
+    }
+}

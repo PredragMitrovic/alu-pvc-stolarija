@@ -1,0 +1,52 @@
+base: 'http://staklene-fasade.local/'
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Fluid
+languages:
+  -
+    title: Serbian
+    enabled: true
+    languageId: 0
+    base: /
+    locale: sr_RS.UTF-8
+    navigationTitle: 'Српски / Srpski'
+    flag: rs
+    hreflang: sr-RS
+    websiteTitle: 'Staklene fasade'
+    dependencies:
+      - typo3/seo-sitemap
+    fallbackType: strict
+    fallbacks: ''
+  -
+    title: English
+    enabled: true
+    languageId: 1
+    base: /en/
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: gb
+    hreflang: en-US
+    websiteTitle: 'Glass facades'
+    fallbackType: fallback
+    fallbacks: '0'
+  -
+    title: German
+    enabled: true
+    languageId: 2
+    base: /de/
+    locale: de_DE.UTF-8
+    navigationTitle: Deutsch
+    flag: de
+    hreflang: de-DE
+    websiteTitle: 'Glasfassaden'
+    fallbackType: fallback
+    fallbacks: '0,1'
+rootPageId: 43
+websiteTitle: 'Staklene fasade'
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      /: 0
+      sitemap.xml: 1533906435

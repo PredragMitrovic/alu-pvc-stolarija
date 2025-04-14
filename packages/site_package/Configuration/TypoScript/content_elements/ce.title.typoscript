@@ -1,0 +1,13 @@
+tt_content.section_title =< lib.contentElement
+tt_content.section_title {
+    templateName = SectionTitle
+    templateRootPaths {
+        10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        10 = EXT:site_package/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:site_package/Resources/Private/Layouts/
+    }
+}

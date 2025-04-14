@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="sr" datatype="plaintext" original="messages" date="2025-03-21T00:00:00Z">
+    <body>
+      <trans-unit id="footer.company">
+        <source>Moja firma</source>
+        <target>Moja firma</target>
+      </trans-unit>
+          <trans-unit id="contact.title">
+        <source>Contact Us</source>
+        <target>Kontaktirajte nas</target>
+      </trans-unit>
+      <trans-unit id="contact.name">
+        <source>Name</source>
+        <target>Ime</target>
+      </trans-unit>
+      <trans-unit id="contact.email">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="contact.message">
+        <source>Message</source>
+        <target>Poruka</target>
+      </trans-unit>
+      <trans-unit id="contact.submit">
+        <source>Send</source>
+        <target>Pošalji</target>
+      </trans-unit>
+
+
+      <trans-unit id="footer.callToAction">
+        <source>Let's create your custom product!</source>
+        <target>Aluminijumska stolarija po meri</target>
+      </trans-unit>
+      <trans-unit id="footer.contactUs">
+        <source>Contact us today</source>
+        <target>Kontaktirajte nas</target>
+      </trans-unit>
+      <trans-unit id="footer.companyDescription">
+        <source>Company description</source>
+        <target>ALU-PVC Bogdanović – vaš pouzdan partner za aluminijumsku i PVC stolariju. Bavimo se proizvodnjom po meri i profesionalnom ugradnjom prozora, vrata, fasada i prateće opreme. Kvalitet, preciznost i zadovoljstvo klijenata su temelji našeg poslovanja.</target>
+      </trans-unit>
+      <trans-unit id="footer.navigation">
+        <source>Navigation</source>
+        <target>Navigacija</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.home">
+        <source>Home</source>
+        <target>Početna</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.about">
+        <source>About</source>
+        <target>O nama</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.alu">
+        <source>ALU Joinery</source>
+        <target>ALU stolarija</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.pvc">
+        <source>PVC Joinery</source>
+        <target>PVC stolarija</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.gallery">
+        <source>Gallery</source>
+        <target>Galerija</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.blog">
+        <source>Novosti</source>
+        <target>Novosti</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.contact">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="footer.contact">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="footer.address">
+        <source>Address</source>
+        <target>Beograd, Srbija</target>
+      </trans-unit>
+      <trans-unit id="footer.newsletterTitle">
+        <source>Get the latest news</source>
+        <target>Prijavite se na naš newsletter</target>
+      </trans-unit>
+      <trans-unit id="footer.newsletterPlaceholder">
+        <source>Enter your email</source>
+        <target>Unesite vaš email</target>
+      </trans-unit>
+      <trans-unit id="footer.rights">
+        <source>All rights reserved.</source>
+        <target>Sva prava zadržana.</target>
+      </trans-unit>
+      <trans-unit id="footer.privacy">
+        <source>Privacy Policy</source>
+        <target>Politika privatnosti</target>
+      </trans-unit>
+      <trans-unit id="footer.cookies">
+        <source>Cookie Policy</source>
+        <target>Politika kolačića</target>
+      </trans-unit>
+
+
+      <trans-unit id="topbar.address">
+        <source>Beograd, Srbija</source>
+        <target>Beograd, Srbija</target>
+      </trans-unit>
+      <trans-unit id="topbar.promoText">
+        <source>Zakažite besplatnu konsultaciju već danas!</source>
+        <target>Zakažite besplatnu konsultaciju već danas!</target>
+      </trans-unit>
+      <trans-unit id="topbar.workingHours">
+        <source>Pon – Pet: 09h – 17h</source>
+        <target>Pon – Pet: 09h – 17h</target>
+      </trans-unit>
+
+
+      <trans-unit id="hero.cta.getQuote">
+        <source>Zatražite ponudu</source>
+        <target>Zatražite ponudu</target>
+      </trans-unit>
+      <trans-unit id="learnMore">
+        <source>Saznajte više</source>
+        <target>Saznajte više</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

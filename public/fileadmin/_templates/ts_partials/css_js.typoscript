@@ -1,0 +1,13 @@
+# --- CSS fajlovi u HEAD ---
+page.includeCSS {
+  reset = fileadmin/templates/assets/css/reset.css
+  grid = fileadmin/templates/assets/css/grid.css
+  style = fileadmin/templates/assets/css/style.css
+}
+
+# --- JS fajlovi u FOOTER-u (pre </body>) ---
+page.includeJSFooter {
+  jquery = fileadmin/templates/assets/js/jquery.min.js
+  main = fileadmin/templates/assets/js/main.js
+  extra = fileadmin/templates/assets/js/extra.js
+}

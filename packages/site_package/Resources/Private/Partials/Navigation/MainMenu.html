@@ -1,0 +1,102 @@
+<div class="collapse navbar-collapse main-menu">
+    <div class="nav-menu-wrapper">
+        <v:menu entryLevel="0" levels="1" expandAll="true" as="mainMenu">
+            <ul class="navbar-nav mr-auto" id="menu">
+                <f:for each="{mainMenu}" as="page">
+                    <li class="nav-item {f:if(condition: page.hasSubPages, then: 'submenu')} {page.class}">
+                        <a class="nav-link" href="{page.link}" title="{page.title}">{page.title}</a>
+
+                        <f:if condition="{page.hasSubPages}">
+                            <v:menu.sub pageUid="{page.uid}" as="subPages">
+                                <ul>
+                                    <f:for each="{subPages}" as="subpage">
+                                        <li class="nav-item {f:if(condition: subpage.hasSubPages, then: 'submenu')} {subpage.class}">
+                                            <a class="nav-link" href="{subpage.link}" title="{subpage.title}">{subpage.title}</a>
+
+                                            <f:if condition="{subpage.hasSubPages}">
+                                                <v:menu.sub pageUid="{subpage.uid}" as="subsubPages">
+                                                    <ul>
+                                                        <f:for each="{subsubPages}" as="subsubpage">
+                                                            <li class="nav-item {subsubpage.class}">
+                                                                <a class="nav-link" href="{subsubpage.link}" title="{subsubpage.title}">{subsubpage.title}</a>
+                                                            </li>
+                                                        </f:for>
+                                                    </ul>
+                                                </v:menu.sub>
+                                            </f:if>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </v:menu.sub>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </v:menu>
+
+
+
+    </div>
+
+    <!-- Header Social Icons Start -->
+    <!-- Language Switcher Dropdown -->
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle d-flex align-items-center gap-2"
+                type="button"
+                id="dropdownLang"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+            <img src="/images/sr.png" alt="SR" width="24" height="24" class="rounded-circle"> SR
+        </button>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownLang">
+            <li>
+                <f:link.page class="dropdown-item d-flex align-items-center gap-2" additionalParams="{L: 0}">
+                    <img src="/images/sr.png" width="24" class="rounded-circle"> SR
+                </f:link.page>
+            </li>
+            <li>
+                <f:link.page class="dropdown-item d-flex align-items-center gap-2" additionalParams="{L: 1}">
+                    <img src="/images/en.png" width="24" class="rounded-circle"> EN
+                </f:link.page>
+            </li>
+            <li>
+                <f:link.page class="dropdown-item d-flex align-items-center gap-2" additionalParams="{L: 2}">
+                    <img src="/images/de.png" width="24" class="rounded-circle"> DE
+                </f:link.page>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.getElementById('dropdownLang');
+            const currentPath = window.location.pathname;
+
+            // Inicijalno postavi trenutni jezik na osnovu URL-a
+            if (currentPath.startsWith('/en/')) {
+                button.innerHTML = '<img src="/images/en.png" width="24" class="rounded-circle"> EN';
+            } else if (currentPath.startsWith('/de/')) {
+                button.innerHTML = '<img src="/images/de.png" width="24" class="rounded-circle"> DE';
+            } else {
+                button.innerHTML = '<img src="/images/sr.png" width="24" class="rounded-circle"> SR';
+            }
+
+            // Slušaj klik na svaki item u dropdownu da ažurira dugme pre nego što browser ode na novu stranicu
+            const items = document.querySelectorAll('.dropdown-menu .dropdown-item');
+            items.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    const lang = this.getAttribute('data-lang');
+                    const img = this.getAttribute('data-img');
+                    button.innerHTML = `<img src="${img}" width="24" class="rounded-circle"> ${lang}`;
+                });
+            });
+        });
+    </script>
+
+
+
+
+    <!-- Language Switcher Dropdown end -->
+</div>

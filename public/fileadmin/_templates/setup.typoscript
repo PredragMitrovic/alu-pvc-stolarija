@@ -1,0 +1,118 @@
+# Ovo mapira “styles.content.get” na “lib.content_0” (colPos=0)
+styles.content.get < lib.content_0
+
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+  templateRootPaths.10 = fileadmin/templates/templates/
+  layoutRootPaths.10 = fileadmin/templates/layouts/
+  partialRootPaths.10 = fileadmin/templates/partials/
+
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+    key.data = pagelayout
+
+    default = TEXT
+    default.value = fileadmin/templates/templates/page/default.html
+
+    pagets__main = TEXT
+    pagets__main.value = fileadmin/templates/templates/page/main.html
+
+    pagets__two_column = TEXT
+    pagets__two_column.value = fileadmin/templates/templates/page/two_column.html
+
+    pagets__three_column = TEXT
+    pagets__three_column.value = fileadmin/templates/templates/page/three_column.html
+  }
+
+  variables {
+    content_0 < lib.content_0
+    content_1 < lib.content_1
+    content_2 < lib.content_2
+    content_3 < lib.content_3
+  }
+}
+
+page.20 = TEXT
+page.20.data = pagelayout
+
+# TYPO3 13 METODA ZA DOHVAT SADRŽAJA PO colPos
+lib.content_0 = CONTENT
+lib.content_0 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=0
+        orderBy = sorting
+    }
+}
+
+lib.content_1 = CONTENT
+lib.content_1 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=1
+        orderBy = sorting
+    }
+}
+
+lib.content_2 = CONTENT
+lib.content_2 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=2
+        orderBy = sorting
+    }
+}
+
+lib.content_3 = CONTENT
+lib.content_3 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=3
+        orderBy = sorting
+    }
+}
+
+
+#language:
+config {
+  linkVars = L
+  sys_language_uid = 0
+  language = sr
+  locale_all = sr_RS.UTF-8
+  htmlTag_langKey = sr
+}
+
+plugin.tx_fed {
+  settings {
+    translation {
+      extensionName = site
+    }
+  }
+}
+
+lib.languageMenu = HMENU
+lib.languageMenu {
+  special = language
+  special.value = 0,1,2
+
+  1 = TMENU
+  1 {
+    NO = 1
+    NO.linkWrap = <li>|</li>
+    ACT = 1
+    ACT.linkWrap = <li class="active">|</li>
+  }
+}
+
+config._LOCAL_LANG {
+  sr.footer.company = Moja firma
+  en.footer.company = My company
+  de.footer.company = Meine Firma
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/ts_partials/css_js.typoscript">

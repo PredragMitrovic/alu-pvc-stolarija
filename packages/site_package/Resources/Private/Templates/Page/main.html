@@ -1,0 +1,18 @@
+<f:layout name="page" />
+
+<f:section name="content">
+  <!-- Preloader Start -->
+  <div class="preloader">
+    <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <f:render partial="header" />
+
+    <f:cObject typoscriptObjectPath="lib.content_0" />
+
+  <f:render partial="footer" />
+</f:section>

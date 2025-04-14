@@ -1,0 +1,23 @@
+tt_content.about_us =< lib.contentElement
+tt_content.about_us {
+  templateName = AboutUs
+
+  templateRootPaths {
+    10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+  }
+  partialRootPaths {
+    10 = EXT:site_package/Resources/Private/Partials/
+  }
+  layoutRootPaths {
+    10 = EXT:site_package/Resources/Private/Layouts/
+  }
+
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    10 {
+      references.fieldName = about_image
+      as = aboutImage
+    }
+  }
+}
+OurServices

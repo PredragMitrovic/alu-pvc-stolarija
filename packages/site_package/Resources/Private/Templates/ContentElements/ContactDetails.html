@@ -1,0 +1,96 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <!-- Page Contact Us Stat -->
+    <div class="page-contact-us">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">{data.section_title}</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">
+                            <f:format.html>{data.bodytext}</f:format.html>
+                        </h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Conatct Info Item Start -->
+                    <div class="contact-info-item wow fadeInUp">
+                        <div class="contact-info-img">
+                            <figure class="image-anime">
+                                <f:if condition="{locationImage}">
+                                    <f:for each="{locationImage}" as="file">
+                                        <f:image image="{file}" class="img-fluid" />
+                                    </f:for>
+                                </f:if>
+                            </figure>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h3>{data.service_title_1}:</h3>
+                            <p>{data.service_text_1}</p>
+                        </div>
+                    </div>
+                    <!-- Conatct Info Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Conatct Info Item Start -->
+                    <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-info-img">
+                            <figure class="image-anime">
+                                <f:if condition="{emailImage}">
+                                    <f:for each="{emailImage}" as="file" iteration="iteration">
+                                        <f:image image="{file}" class="img-fluid" />
+                                    </f:for>
+                                </f:if>
+                            </figure>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h3>{data.service_title_2}:</h3>
+                            <p>{data.service_text_2}</p>
+                            <f:if condition="{data.email_secondary}">
+                                <p>{data.service_text_5}</p>
+                            </f:if>
+                        </div>
+                    </div>
+                    <!-- Conatct Info Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Conatct Info Item Start -->
+                    <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="contact-info-img">
+                            <figure class="image-anime">
+                                <f:if condition="{phoneImage}">
+                                    <f:for each="{phoneImage}" as="file">
+                                        <f:image image="{file}" class="img-fluid" />
+                                    </f:for>
+                                </f:if>
+                            </figure>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h3>{data.service_title_3}:</h3>
+                            <p>{data.service_text_3}</p>
+                            <f:if condition="{data.phone_secondary}">
+                                <p>{data.service_title_4}</p>
+                            </f:if>
+                        </div>
+                    </div>
+                    <!-- Conatct Info Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Contact Us End -->
+
+</f:section>
+</html>

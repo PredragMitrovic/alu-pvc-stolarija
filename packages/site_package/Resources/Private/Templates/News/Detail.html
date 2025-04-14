@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper"
+	  data-namespace-typo3-fluid="true">
+
+<f:layout name="Detail" />
+
+<!--
+	=====================
+		News/Detail.html
+-->
+
+<f:section name="content">
+	<f:if condition="{settings.templateLayout} == 4">
+		<f:render partial="News/Layouts/DetailLayout1" arguments="{newsItem: newsItem, settings: settings}" />
+	</f:if>
+	<f:if condition="{settings.templateLayout} == 5">
+		<f:render partial="News/Layouts/DetailLayout2" arguments="{newsItem: newsItem, settings: settings}" />
+	</f:if>
+	<f:if condition="{settings.templateLayout} == 6">
+		<f:render partial="News/Layouts/DetailLayout3" arguments="{newsItem: newsItem, settings: settings}" />
+	</f:if>
+	<f:if condition="{settings.templateLayout} == ''">
+		<f:render partial="News/Layouts/DetailLayout1" arguments="{newsItem: newsItem, settings: settings}" />
+	</f:if>
+</f:section>
+</html>

@@ -1,0 +1,25 @@
+tt_content.our_work =< lib.contentElement
+tt_content.our_work {
+    templateName = OurWork
+    templateRootPaths {
+        10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        10 = EXT:site_package/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:site_package/Resources/Private/Layouts/
+    }
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = work_image_1
+            as = workImage1
+        }
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references.fieldName = work_image_2
+            as = workImage2
+        }
+    }
+}

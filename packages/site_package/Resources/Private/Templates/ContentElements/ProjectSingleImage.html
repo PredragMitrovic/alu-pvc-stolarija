@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div class="project-single-image">
+        <f:if condition="{images}">
+            <figure class="image-anime reveal">
+                <f:for each="{images}" as="file">
+                    <img src="{f:uri.image(image: file)}" alt="{file.alternative}" />
+                </f:for>
+            </figure>
+        </f:if>
+    </div>
+
+</f:section>
+</html>

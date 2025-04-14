@@ -1,0 +1,35 @@
+# TYPO3 specific
+/typo3temp/*
+!/typo3temp/.htaccess
+/typo3conf/LocalConfiguration.php
+/typo3conf/PackageStates.php
+/typo3conf/ext/
+!/typo3conf/ext/.htaccess
+/fileadmin/_processed_/
+/fileadmin/user_upload/
+/uploads/
+
+# Composer
+/vendor/
+composer.lock
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache
+*.cache

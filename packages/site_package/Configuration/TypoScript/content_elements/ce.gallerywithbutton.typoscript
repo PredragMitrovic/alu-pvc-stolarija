@@ -1,0 +1,20 @@
+tt_content.gallery_with_button =< lib.contentElement
+tt_content.gallery_with_button {
+    templateName = GalleryWithButton
+    templateRootPaths {
+        10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        10 = EXT:site_package/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:site_package/Resources/Private/Layouts/
+    }
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = gallery_images
+            as = galleryImages
+        }
+    }
+}

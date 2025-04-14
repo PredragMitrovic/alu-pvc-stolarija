@@ -1,0 +1,31 @@
+page.includeCSS {
+  10 = EXT:site_package/Resources/Public/Css/bootstrap.min.css
+  20 = EXT:site_package/Resources/Public/Css/slicknav.min.css
+  30 = EXT:site_package/Resources/Public/Css/swiper-bundle.min.css
+  40 = EXT:site_package/Resources/Public/Css/all.min.css
+  50 = EXT:site_package/Resources/Public/Css/animate.css
+  60 = EXT:site_package/Resources/Public/Css/magnific-popup.css
+  70 = EXT:site_package/Resources/Public/Css/mousecursor.css
+  80 = EXT:site_package/Resources/Public/Css/custom.css
+}
+
+page.includeJSFooter {
+  10 = EXT:site_package/Resources/Public/Js/jquery-3.7.1.min.js
+  20 = EXT:site_package/Resources/Public/Js/bootstrap.bundle.min.js
+  30 = EXT:site_package/Resources/Public/Js/validator.min.js
+  40 = EXT:site_package/Resources/Public/Js/jquery.slicknav.js
+  50 = EXT:site_package/Resources/Public/Js/swiper-bundle.min.js
+  60 = EXT:site_package/Resources/Public/Js/jquery.waypoints.min.js
+  70 = EXT:site_package/Resources/Public/Js/jquery.counterup.min.js
+  80 = EXT:site_package/Resources/Public/Js/isotope.min.js
+  90 = EXT:site_package/Resources/Public/Js/jquery.magnific-popup.min.js
+  100 = EXT:site_package/Resources/Public/Js/SmoothScroll.js
+  110 = EXT:site_package/Resources/Public/Js/parallaxie.js
+  120 = EXT:site_package/Resources/Public/Js/gsap.min.js
+  130 = EXT:site_package/Resources/Public/Js/magiccursor.js
+  140 = EXT:site_package/Resources/Public/Js/SplitText.js
+  150 = EXT:site_package/Resources/Public/Js/ScrollTrigger.min.js
+  160 = EXT:site_package/Resources/Public/Js/jquery.mb.YTPlayer.min.js
+  170 = EXT:site_package/Resources/Public/Js/wow.min.js
+  180 = EXT:site_package/Resources/Public/Js/function.js
+}

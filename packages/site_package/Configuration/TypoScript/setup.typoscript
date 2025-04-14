@@ -1,0 +1,172 @@
+# Ovo mapira "styles.content.get" na "lib.content_0" (colPos=0)
+styles.content.get < lib.content_0
+
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+  templateRootPaths.10 = EXT:site_package/Resources/Private/Templates/
+  layoutRootPaths.10 = EXT:site_package/Resources/Private/Layouts/
+  partialRootPaths.10 = EXT:site_package/Resources/Private/Partials/
+
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+    key.data = pagelayout
+
+      default = TEXT
+      default.value = EXT:site_package/Resources/Private/Templates/Page/default.html
+
+      pagets__main = TEXT
+      pagets__main.value = EXT:site_package/Resources/Private/Templates/Page/main.html
+
+      pagets__two_column = TEXT
+      pagets__two_column.value = EXT:site_package/Resources/Private/Templates/Page/two_column.html
+
+      pagets__three_column = TEXT
+      pagets__three_column.value = EXT:site_package/Resources/Private/Templates/Page/three_column.html
+  }
+
+  variables {
+    content_0 < lib.content_0
+    content_1 < lib.content_1
+    content_2 < lib.content_2
+    content_3 < lib.content_3
+  }
+}
+
+special.value = 1
+
+#Proverava koji je trenutni bekend layout
+#page.20 = TEXT
+#page.20.data = pagelayout
+
+# TYPO3 13 METODA ZA DOHVAT SADRŽAJA PO colPos
+lib.content_0 = CONTENT
+lib.content_0 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=0
+        orderBy = sorting
+    }
+}
+
+lib.content_1 = CONTENT
+lib.content_1 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=1
+        orderBy = sorting
+    }
+}
+
+lib.content_2 = CONTENT
+lib.content_2 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=2
+        orderBy = sorting
+    }
+}
+
+lib.content_3 = CONTENT
+lib.content_3 {
+    table = tt_content
+    select {
+        pidInList = this
+        where = colPos=3
+        orderBy = sorting
+    }
+}
+
+config.contentObjectExceptionHandler = 0
+#language:
+config {
+  linkVars = L
+  sys_language_uid = 0
+  language = sr
+  locale_all = sr_RS.UTF-8
+  htmlTag_langKey = sr
+}
+
+plugin.tx_fed {
+  settings {
+    translation {
+      extensionName = site
+    }
+  }
+}
+
+
+
+
+
+config._LOCAL_LANG {
+  sr.footer.company = Moja firma
+  en.footer.company = My company
+  de.footer.company = Meine Firma
+}
+
+
+@import 'EXT:site_package/Configuration/TypoScript/Configuration/css_js.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/Configuration/seo.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/Configuration/form.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/Configuration/rte.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.teaser.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.grid.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.herobanner.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.aboutus.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.ourservices.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.ourwork.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.introvideo.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.gallerywithbutton.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.testimonials.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.faq.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.title.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.singleimage.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.leftmenu.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.kontakt.typoscript''
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.mapformelement.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/Plugins/news.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/ContentElement/ContactForm.typoscript'
+
+page.999 = TEXT
+page.999.value = SITE PACKAGE TS IS LOADED
+page.999.wrap = <!--|-->
+
+tx_sitepackage {
+    storagePid = 7  # Replace 123 with your actual storage folder PID
+}
+
+# Register content element
+tt_content {
+    contactform =< lib.contentElement
+    contactform {
+        templateName = ContactForm
+        templateRootPaths {
+            10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+        }
+        partialRootPaths {
+            10 = EXT:site_package/Resources/Private/Partials/ContentElements/
+        }
+        layoutRootPaths {
+            10 = EXT:site_package/Resources/Private/Layouts/ContentElements/
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+        }
+    }
+}
+
+# Form configuration
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            100 = EXT:site_package/Configuration/Yaml/FormSetup.yaml
+        }
+    }
+}

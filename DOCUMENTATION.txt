@@ -1,0 +1,278 @@
+✅ TYPO3 FLUID SETUP — STRUKTURA + DOKUMENTACIJA
+🗂️ FOLDER STRUKTURA (fileadmin/)
+css
+Copy
+Edit
+fileadmin/
+└── templates/
+    ├── layouts/
+    │   └── page.html
+    ├── partials/
+    │   ├── header.html
+    │   └── footer.html
+    ├── templates/
+    │   └── page/
+    │       ├── default.html
+    │       ├── main.html
+    │       ├── two_column.html
+    │       └── three_column.html
+    ├── typoscript/
+    │   ├── setup.typoscript
+    │   └── constants.typoscript
+    └── backend_layouts/
+        └── page.tsconfig
+
+
+1️⃣ HEADER I FOOTER PARTIALI
+📄 fileadmin/templates/partials/header.html
+html
+Copy
+Edit
+<header style="background: #333; color: #fff; padding: 20px;">
+  <h1>Header partial</h1>
+</header>
+📄 fileadmin/templates/partials/footer.html
+html
+Copy
+Edit
+<footer style="background: #eee; padding: 20px;">
+  <p>&copy; 2025 - Footer partial</p>
+</footer>
+2️⃣ page.html — Layout fajl
+📄 fileadmin/templates/layouts/page.html
+html
+Copy
+Edit
+<f:section name="content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TYPO3 Layout</title>
+</head>
+<body>
+  <f:render section="content" />
+</body>
+</html>
+</f:section>
+3️⃣ PRIMERI TEMPLATE FAJLOVA
+📄 default.html
+html
+Copy
+Edit
+<f:layout name="page" />
+
+<f:section name="content">
+  <f:render partial="header" />
+  <main>
+    <f:cObject typoscriptObjectPath="styles.content.get" />
+  </main>
+  <f:render partial="footer" />
+</f:section>
+📄 main.html (Jedna kolona — colPos=0)
+html
+Copy
+Edit
+<f:layout name="page" />
+
+<f:section name="content">
+  <f:render partial="header" />
+  <main style="padding: 20px;">
+    <f:cObject typoscriptObjectPath="lib.content_0" />
+  </main>
+  <f:render partial="footer" />
+</f:section>
+📄 two_column.html (colPos=0 i colPos=1)
+html
+Copy
+Edit
+<f:layout name="page" />
+
+<f:section name="content">
+  <f:render partial="header" />
+  <div class="container" style="display: flex; gap: 20px;">
+    <aside style="flex: 1; background: #eee; padding: 10px;">
+      <f:cObject typoscriptObjectPath="lib.content_1" />
+    </aside>
+    <main style="flex: 2; background: #fff; padding: 10px;">
+      <f:cObject typoscriptObjectPath="lib.content_0" />
+    </main>
+  </div>
+  <f:render partial="footer" />
+</f:section>
+4️⃣ TypoScript Setup (npr. setup.typoscript)
+typoscript
+Copy
+Edit
+# Mapiranje colPos vrednosti
+styles.content.get < lib.content_0
+
+lib.content_0 = CONTENT
+lib.content_0 {
+  table = tt_content
+  select {
+    pidInList = this
+    where = colPos=0
+    orderBy = sorting
+  }
+}
+
+lib.content_1 = CONTENT
+lib.content_1 {
+  table = tt_content
+  select {
+    pidInList = this
+    where = colPos=1
+    orderBy = sorting
+  }
+}
+
+lib.content_2 = CONTENT
+lib.content_2 {
+  table = tt_content
+  select {
+    pidInList = this
+    where = colPos=2
+    orderBy = sorting
+  }
+}
+
+lib.content_3 = CONTENT
+lib.content_3 {
+  table = tt_content
+  select {
+    pidInList = this
+    where = colPos=3
+    orderBy = sorting
+  }
+}
+
+# Glavna konfiguracija
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+  templateRootPaths.10 = fileadmin/templates/templates/
+  layoutRootPaths.10 = fileadmin/templates/layouts/
+  partialRootPaths.10 = fileadmin/templates/partials/
+
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+    key.data = pagelayout
+
+    default = TEXT
+    default.value = fileadmin/templates/templates/page/default.html
+
+    pagets__main = TEXT
+    pagets__main.value = fileadmin/templates/templates/page/main.html
+
+    pagets__two_column = TEXT
+    pagets__two_column.value = fileadmin/templates/templates/page/two_column.html
+
+    pagets__three_column = TEXT
+    pagets__three_column.value = fileadmin/templates/templates/page/three_column.html
+  }
+
+  variables {
+    content_0 < lib.content_0
+    content_1 < lib.content_1
+    content_2 < lib.content_2
+    content_3 < lib.content_3
+  }
+}
+📄 page.tsconfig sadržaj (fileadmin/templates/backend_layouts/page.tsconfig)
+typoscript
+Copy
+Edit
+mod.web_layout.BackendLayouts {
+  main {
+    title = Glavni (jedna kolona)
+    identifier = main
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Glavni sadržaj
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  two_column {
+    title = Dvokolumni raspored
+    identifier = two_column
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Leva kolona
+                colPos = 1
+              }
+              2 {
+                name = Glavna kolona
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  three_column {
+    title = Trokolumni raspored
+    identifier = three_column
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Leva kolona
+                colPos = 1
+              }
+              2 {
+                name = Glavna kolona
+                colPos = 0
+              }
+              3 {
+                name = Desna kolona
+                colPos = 2
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+🛠️ Kako povezuješ page.tsconfig?
+Idi na:
+
+Root stranicu (ili bilo koju stranicu gde želiš da koristiš layout)
+→ Page Properties → Resources tab
+U polje Page TSconfig ubaci:
+tsconfig
+Copy
+Edit
+<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/backend_layouts/page.tsconfig">
+✅ Rezultat
+✅ Backend layouti dostupni u Appearance sekciji
+✅ Fluid templejti povezani dinamički preko pagelayout
+✅ Fajlovi organizovani po standardima
+
+
+obavezno proveriti dal je composer radi an PHP verziji kao i wamp!!!

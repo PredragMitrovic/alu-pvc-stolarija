@@ -1,0 +1,20 @@
+tt_content.intro_video =< lib.contentElement
+tt_content.intro_video {
+    templateName = IntroVideo
+    templateRootPaths {
+        10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        10 = EXT:site_package/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:site_package/Resources/Private/Layouts/
+    }
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = video_image
+            as = videoImage
+        }
+    }
+}

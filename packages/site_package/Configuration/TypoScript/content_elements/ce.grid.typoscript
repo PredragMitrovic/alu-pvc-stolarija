@@ -1,0 +1,35 @@
+
+tt_content.sitepackage_gridcontainer =< lib.contentElement
+tt_content.sitepackage_gridcontainer {
+  templateName = GridContainer
+}
+
+lib.grid_col_1 = CONTENT
+lib.grid_col_1 {
+  table = tt_content
+  select {
+    where = colPos=101
+    pidInList = this
+    orderBy = sorting
+  }
+}
+
+lib.grid_col_2 = CONTENT
+lib.grid_col_2 {
+  table = tt_content
+  select {
+    where = colPos=102
+    pidInList = this
+    orderBy = sorting
+  }
+}
+
+lib.grid_col_3 = CONTENT
+lib.grid_col_3 {
+  table = tt_content
+  select {
+    where = colPos=103
+    pidInList = this
+    orderBy = sorting
+  }
+}

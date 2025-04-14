@@ -1,0 +1,118 @@
+✅ 1. Uključi seo ekstenziju (ako već nisi)
+Ako si je instalirao preko Composer-a, proveri da li je aktivna:
+composer require typo3/cms-seo
+
+vendor/bin/typo3 extension:setup
+U Extension Manageru proveri da je ✅ aktivna SEO.
+
+✅ 2. Uključi typo3/seo-sitemap site set
+U packages/site_package/Configuration/Sets/MySite/config.yaml dodaj:
+
+yaml
+Copy
+Edit
+name: site/site-package
+label: PVC Stolarija Site Package
+dependencies:
+  - typo3/seo-sitemap
+To automatski aktivira sitemap i meta tag logiku u fejmu.
+
+✅ 3. Konfiguriši Page TSconfig da omogući dodatne SEO i Social tabove
+U EXT:site_package/Configuration/page.tsconfig:
+
+typoscript
+Copy
+Edit
+mod.web_layout {
+  BackendLayouts {
+    ...
+  }
+}
+
+# Enable SEO & Social Tabs
+TCEFORM.pages {
+  seo_title.disabled = 0
+  seo_description.disabled = 0
+  canonical_link.disabled = 0
+  no_index.disabled = 0
+  no_follow.disabled = 0
+  og_title.disabled = 0
+  og_description.disabled = 0
+  og_image.disabled = 0
+  twitter_title.disabled = 0
+  twitter_description.disabled = 0
+  twitter_image.disabled = 0
+}
+✅ 4. Uključi Page TSconfig
+U Root Page → Resources tab → Page TSconfig:
+
+typoscript
+Copy
+Edit
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_package/Configuration/page.tsconfig">
+✅ 5. Dodaj dodatne meta tagove u EXT:site_package/Configuration/TypoScript/setup.typoscript
+TYPO3 već renderuje osnovne meta tagove, ali mi ćemo dodati još (JSON-LD, GA, dodatni meta tagovi):
+
+typoscript
+Copy
+Edit
+page {
+  headerData {
+    800 = TEXT
+    800.value (
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PVC Stolarija",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/logo.svg",
+        "sameAs": [
+          "https://facebook.com/yourpage",
+          "https://instagram.com/yourpage"
+        ]
+      }
+      </script>
+    )
+
+    810 = TEXT
+    810.value (
+      <!-- Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+      </script>
+    )
+  }
+}
+Zameni GA_MEASUREMENT_ID sa tvojim pravim ID-om.
+
+✅ 6. Podešavanje SEO i Social media podataka
+Idi u Page Properties → Tabs:
+
+SEO – postavi Title, Description, Canonical, Robots, Priority
+Social Media – OG Title, OG Description, Image, Twitter Title, Twitter Image
+✅ 7. Aktivacija sitemap.xml
+Dodaj u config.yaml:
+
+yaml
+Copy
+Edit
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      /: 0
+      sitemap.xml: 1533906435
+Sada ti je sitemap dostupan na:
+
+arduino
+Copy
+Edit
+https://yourdomain.com/sitemap.xml
+Ako želiš, mogu ti sve ovo i spakovati u gotove fajlove unutar site_package. Samo reci „hoću“.
+
+Da li želiš i JSON-LD konfiguraciju da se generiše iz backend polja (npr. Page Properties)?

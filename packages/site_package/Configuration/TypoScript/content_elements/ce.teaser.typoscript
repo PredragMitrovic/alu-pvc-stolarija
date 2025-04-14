@@ -1,0 +1,4 @@
+tt_content.sitepackage_teaserbox =< lib.contentElement
+tt_content.sitepackage_teaserbox {
+  templateName = TeaserBox
+}

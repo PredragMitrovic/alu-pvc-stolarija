@@ -1,0 +1,46 @@
+tt_content.hero_banner =< lib.contentElement
+tt_content.hero_banner {
+  templateName = HeroBanner
+
+  templateRootPaths {
+    10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+  }
+  partialRootPaths {
+    10 = EXT:site_package/Resources/Private/Partials/
+  }
+  layoutRootPaths {
+    10 = EXT:site_package/Resources/Private/Layouts/
+  }
+
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    10 {
+      references.fieldName = image
+      as = images
+    }
+
+    20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    20 {
+      references.fieldName = image_2
+      as = images2
+    }
+
+    30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    30 {
+      references.fieldName = image_3
+      as = images3
+    }
+
+    40 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    40 {
+      references.fieldName = image_4
+      as = images4
+    }
+
+    50 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    50 {
+      references.fieldName = background_image
+      as = backgroundImage
+    }
+  }
+}

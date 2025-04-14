@@ -1,0 +1,83 @@
+<f:layout name="page" />
+
+<f:section name="content">
+  <!-- Staticki header partial -->
+  <f:render partial="header" />
+  <f:cObject typoscriptObjectPath="lib.content_0" />
+  <div class="page-project-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+
+          <div class="project-single-sidebar">
+            <f:cObject typoscriptObjectPath="lib.content_1" />
+            <!-- Sidebar CTA Box Start -->
+            <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
+              <!-- Sidebar CTA Content Start -->
+              <div class="sidebar-cta-title">
+                <h2>contact info</h2>
+              </div>
+              <!-- Sidebar CTA Content End -->
+
+              <!-- Sidebar CTA Contact Start -->
+              <div class="sidebar-cta-contact">
+                <!-- Sidebar CTA Contact Item Start -->
+                <div class="sidebar-cta-contact-item">
+                  <div class="icon-box">
+                    <img src="images/icon-location.svg" alt="">
+                  </div>
+                  <div class="cta-contact-item-content">
+                    <p>Germany - 785, 15th Street Office 478  Berlin</p>
+                  </div>
+                </div>
+                <!-- Sidebar CTA Contact Item Start -->
+
+                <!-- Sidebar CTA Contact Item Start -->
+                <div class="sidebar-cta-contact-item">
+                  <div class="icon-box">
+                    <img src="images/icon-phone.svg" alt="">
+                  </div>
+                  <div class="cta-contact-item-content">
+                    <p>+123 456 789</p>
+                  </div>
+                </div>
+                <!-- Sidebar CTA Contact Item Start -->
+
+                <!-- Sidebar CTA Contact Item Start -->
+                <div class="sidebar-cta-contact-item">
+                  <div class="icon-box">
+                    <img src="images/icon-mail.svg" alt="">
+                  </div>
+                  <div class="cta-contact-item-content">
+                    <p>info@domain.com</p>
+                  </div>
+                </div>
+                <!-- Sidebar CTA Contact Item Start -->
+              </div>
+              <!-- Sidebar CTA Contact End -->
+            </div>
+            <!-- Sidebar CTA Box End -->
+          </div>
+          <!-- Project Sidebar End -->
+        </div>
+
+        <div class="col-lg-8">
+          <!-- Project Single Content Start -->
+          <div class="project-single-content">
+            <!-- Project Entry Start -->
+            <div class="project-entry">
+              <f:cObject typoscriptObjectPath="lib.content_2" />
+              <!-- Project Information Start -->
+            </div>
+            <!-- Project Entry End -->
+          </div>
+          <!-- Project Single Content End -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <f:render partial="footer" />
+</f:section>

@@ -1,0 +1,52 @@
+#### SEO + Favicons ####
+
+page {
+  headerData {
+    # JSON-LD structured data
+    800 = TEXT
+    800.value (
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Predrag Mitrovic predrag.mitrovic2@gmail.com">
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ALU-PVC Bogdanović",
+        "image": "https://alupvcbogdanovic.rs/images/logo.svg",
+        "@id": "https://alupvcbogdanovic.rs",
+        "url": "https://alupvcbogdanovic.rs",
+        "telephone": "+381607554050",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Beograd",
+          "addressLocality": "Beograd",
+          "postalCode": "11000",
+          "addressCountry": "RS"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.7866,
+          "longitude": 20.4489
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "sameAs": [
+          "https://www.facebook.com/mafinerija",
+          "https://www.instagram.com/mafinerija"
+        ]
+      }
+      </script>
+    )
+
+    # Favicons i manifest
+    900 = TEXT
+    900.value (
+      <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+      <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+      <meta name="apple-mobile-web-app-title" content="ALU-PVC Bogdanović" />
+      <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    )
+  }
+}

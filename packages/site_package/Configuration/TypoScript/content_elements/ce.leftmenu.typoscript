@@ -1,0 +1,13 @@
+tt_content.left_menu =< lib.contentElement
+tt_content.left_menu {
+    templateName = LeftMenu
+    templateRootPaths {
+        10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        10 = EXT:site_package/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:site_package/Resources/Private/Layouts/
+    }
+}

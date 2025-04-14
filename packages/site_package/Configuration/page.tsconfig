@@ -1,0 +1,95 @@
+mod.web_layout.BackendLayouts {
+    main {
+        title = Main one colum Layout
+        identifier = main
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Main
+                                colPos = 0
+                                colspan = 3
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    two_column {
+        title = Trokolumni raspored
+        identifier = two_column
+        config {
+            backend_layout {
+                colCount = 2
+                rowCount = 2
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Gornja kolona
+                                colPos = 0
+                                colspan = 2
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Leva kolona
+                                colPos = 1
+                            }
+                            2 {
+                                name = Desna kolona
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+# Enable SEO & Social Tabs
+TCEFORM.pages {
+  seo_title.disabled = 0
+  seo_description.disabled = 0
+  canonical_link.disabled = 0
+  no_index.disabled = 0
+  no_follow.disabled = 0
+  og_title.disabled = 0
+  og_description.disabled = 0
+  og_image.disabled = 0
+  twitter_title.disabled = 0
+  twitter_description.disabled = 0
+  twitter_image.disabled = 0
+}
+
+tx_news.templateLayouts {
+      1 = List Layout 1
+      2 = List Layout 2
+      3 = List Layout 3
+      4 = Detail Layout 1
+      5 = Detail Layout 2
+      6 = Detail Layout 3
+}
+
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        map_contact_form {
+            iconIdentifier = content-text
+            title = Map & Contact Form
+            description = Adds Google Map with a contact form
+            tt_content_defValues {
+                CType = map_contact_form
+            }
+        }
+    }
+    show := addToList(map_contact_form)
+}

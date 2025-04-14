@@ -1,0 +1,11 @@
+<!-- Staticki partial header -->
+<f:render partial="header" />
+
+<!-- Dinamički sadržaj iz glavne kolone (colPos=0) -->
+<f:cObject typoscriptObjectPath="styles.content.get" />
+
+<!-- Dinamički sadržaj za sidebar (npr. colPos=1) -->
+<f:cObject typoscriptObjectPath="lib.content_1" />
+
+<!-- Staticki partial footer -->
+<f:render partial="footer" />

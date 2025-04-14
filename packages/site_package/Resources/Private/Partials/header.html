@@ -1,0 +1,76 @@
+
+<!-- Topbar Section Start -->
+<div class="topbar">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <div class="topbar-contact-info">
+          <ul>
+            <li>
+              <a href="https://maps.google.com?q=Beograd">
+                <img src="/images/icon-location.svg" alt="">
+                <f:translate key="topbar.address" extensionName="SitePackage" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:office@alupvcbogdanovic.rs">
+                <img src="/images/icon-mail.svg" alt="">
+                office@alupvcbogdanovic.rs
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Promo Text -->
+      <div class="col-lg-4 col-md-6">
+        <div class="topbar-offer">
+          <p><f:translate key="topbar.promoText" extensionName="SitePackage" /></p>
+        </div>
+      </div>
+
+      <!-- Working Hours -->
+      <div class="col-lg-4 col-md-6">
+        <div class="topbar-time">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="/images/icon-clock.svg" alt="">
+                <f:translate key="topbar.workingHours" extensionName="SitePackage" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Topbar Section End -->
+
+
+<header class="main-header">
+  <div class="header-sticky">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo Start -->
+        <a class="navbar-brand" href="./">
+          <img src="/images/logo.webp" alt="Logo" style="max-width: 300px;">
+        </a>
+        <!-- Logo End -->
+
+        <!-- Main Menu Start -->
+        <f:render partial="Navigation/MainMenu" arguments="{mainMenu: mainMenu}" />
+        <!-- Main Menu End -->
+        <div class="navbar-toggle"></div>
+      </div>
+    </nav>
+    <div class="responsive-menu"></div>
+  </div>
+</header>
+
+
+
+
+
+

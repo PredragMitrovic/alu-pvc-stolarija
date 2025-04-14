@@ -1,0 +1,10 @@
+tt_content.contactform =< lib.contentElement
+tt_content.contactform {
+    templateName = ContactForm
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = image
+        }
+    }
+} 

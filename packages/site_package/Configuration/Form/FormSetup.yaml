@@ -1,0 +1,26 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                controllerAction: perform
+                templateRootPaths:
+                  100: "EXT:site_package/Resources/Private/Templates/Form/"
+                partialRootPaths:
+                  100: "EXT:site_package/Resources/Private/Partials/Form/"
+                layoutRootPaths:
+                  100: "EXT:site_package/Resources/Private/Layouts/Form/"
+              finishers:
+                - identifier: EmailToReceiver
+                  options:
+                    subject: "New Contact Form Submission"
+                    recipients:
+                      your-email@example.com: "Your Name"
+                    senderAddress: "{email}"
+                    senderName: "{name}"
+                    replyToAddress: "{email}"
+                    addHtmlPart: true
+                    attachUploads: true

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="de" datatype="plaintext" original="messages" date="2025-03-21T00:00:00Z">
+    <body>
+      <trans-unit id="footer.company">
+        <source>Meine Firma</source>
+        <target>Meine Firma</target>
+      </trans-unit>
+          <trans-unit id="contact.title">
+        <source>Contact Us</source>
+        <target>Kontaktieren Sie uns</target>
+      </trans-unit>
+      <trans-unit id="contact.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="contact.email">
+        <source>Email</source>
+        <target>E-Mail</target>
+      </trans-unit>
+      <trans-unit id="contact.message">
+        <source>Message</source>
+        <target>Nachricht</target>
+      </trans-unit>
+      <trans-unit id="contact.submit">
+        <source>Send</source>
+        <target>Senden</target>
+      </trans-unit>
+
+
+      <trans-unit id="footer.callToAction">
+        <source>Let's create your custom product!</source>
+        <target>Maßgeschneiderte Aluminium-Fenster und Türen</target>
+      </trans-unit>
+      <trans-unit id="footer.contactUs">
+        <source>Contact us today</source>
+        <target>Kontaktieren Sie uns</target>
+      </trans-unit>
+      <trans-unit id="footer.companyDescription">
+        <source>Company description</source>
+        <target>ALU-PVC Bogdanović – Ihr zuverlässiger Partner für Aluminium- und PVC-Tischlerei. Wir bieten maßgeschneiderte Produktion und professionelle Montage von Fenstern, Türen, Fassaden und Zubehör. Qualität, Präzision und Kundenzufriedenheit sind die Grundlagen unseres Geschäfts.</target>
+      </trans-unit>
+      <trans-unit id="footer.navigation">
+        <source>Navigation</source>
+        <target>Navigation</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.home">
+        <source>Home</source>
+        <target>Startseite</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.about">
+        <source>About</source>
+        <target>Über uns</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.alu">
+        <source>ALU Joinery</source>
+        <target>ALU Tischlerei</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.pvc">
+        <source>PVC Joinery</source>
+        <target>PVC Tischlerei</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.gallery">
+        <source>Gallery</source>
+        <target>Galerie</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.blog">
+        <source>Novosti</source>
+        <target>Neuigkeiten</target>
+      </trans-unit>
+      <trans-unit id="footer.nav.contact">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="footer.contact">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="footer.address">
+        <source>Address</source>
+        <target>Belgrad, Serbien</target>
+      </trans-unit>
+      <trans-unit id="footer.newsletterTitle">
+        <source>Get the latest news</source>
+        <target>Erhalten Sie die neuesten Nachrichten</target>
+      </trans-unit>
+      <trans-unit id="footer.newsletterPlaceholder">
+        <source>Enter your email</source>
+        <target>Geben Sie Ihre E-Mail-Adresse ein</target>
+      </trans-unit>
+      <trans-unit id="footer.rights">
+        <source>All rights reserved.</source>
+        <target>Alle Rechte vorbehalten.</target>
+      </trans-unit>
+      <trans-unit id="footer.privacy">
+        <source>Privacy Policy</source>
+        <target>Datenschutzrichtlinie</target>
+      </trans-unit>
+      <trans-unit id="footer.cookies">
+        <source>Cookie Policy</source>
+        <target>Cookie-Richtlinie</target>
+      </trans-unit>
+
+
+      <trans-unit id="topbar.address">
+        <source>Belgrad, Serbien</source>
+        <target>Belgrad, Serbien</target>
+      </trans-unit>
+      <trans-unit id="topbar.promoText">
+        <source>Vereinbaren Sie noch heute eine kostenlose Beratung!</source>
+        <target>Vereinbaren Sie noch heute eine kostenlose Beratung!</target>
+      </trans-unit>
+      <trans-unit id="topbar.workingHours">
+        <source>Mo – Fr: 09:00 – 17:00 Uhr</source>
+        <target>Mo – Fr: 09:00 – 17:00 Uhr</target>
+      </trans-unit>
+
+
+      <trans-unit id="hero.cta.getQuote">
+        <source>Zatražite ponudu</source>
+        <target>Angebot anfordern</target>
+      </trans-unit>
+      <trans-unit id="learnMore">
+        <source>Saznajte više</source>
+        <target>Mehr erfahren</target>
+      </trans-unit>
+
+
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,82 @@
+<div class="project-detail-list wow fadeInUp peki-levi-meni">
+    <div class="project-detail-title">
+        <h3>{data.header}</h3>
+    </div>
+
+    <f:if condition="{data.faq_question_1}">
+        <div class="project-detail-item">
+            <div class="icon-box">
+                <i class="{data.faq_question_2}"></i>
+            </div>
+            <div class="project-detail-content">
+                <f:link.typolink parameter="{data.btn_link}" class="btn-default"><h3>{data.faq_question_1}</h3></f:link.typolink>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{data.faq_question_3}">
+        <div class="project-detail-item">
+            <div class="icon-box">
+                <i class="{data.faq_question_4}"></i>
+            </div>
+            <div class="project-detail-content">
+                <f:link.typolink parameter="{data.work_learn_more_link}" class="btn-default"><h3>{data.faq_question_3}</h3></f:link.typolink>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{data.faq_question_5}">
+        <div class="project-detail-item">
+            <div class="icon-box">
+                <i class="{data.faq_question_6}"></i>
+            </div>
+            <div class="project-detail-content">
+                <f:link.typolink parameter="{data.tri_link}" class="btn-default"><h3>{data.faq_question_5}</h3></f:link.typolink>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{data.faq_question_7}">
+        <div class="project-detail-item">
+            <div class="icon-box">
+                <i class="{data.faq_question_8}"></i>
+            </div>
+            <div class="project-detail-content">
+                <f:link.typolink parameter="{data.cetiri_link}" class="btn-default"><h3>{data.faq_question_7}</h3></f:link.typolink>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{data.faq_question_9}">
+        <div class="project-detail-item">
+            <div class="icon-box">
+                <i class="{data.faq_question_10}"></i>
+            </div>
+            <div class="project-detail-content">
+                <f:link.typolink parameter="{data.pet_link}" class="btn-default"><h3>{data.faq_question_9}</h3></f:link.typolink>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{data.faq_answer_2}">
+        <div class="project-detail-item">
+            <div class="icon-box">
+                <i class="{data.faq_answer_6}"></i>
+            </div>
+            <div class="project-detail-content">
+                <f:link.typolink parameter="{data.sest_link}" class="btn-default"><h3>{data.faq_answer_2}</h3></f:link.typolink>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{data.faq_answer_8}">
+        <div class="project-detail-item">
+            <div class="icon-box">
+                <i class="{data.faq_question_6}"></i>
+            </div>
+            <div class="project-detail-content">
+                <f:link.typolink parameter="{data.sedam_link}" class="btn-default"><h3>{data.faq_answer_8}</h3></f:link.typolink>
+            </div>
+        </div>
+    </f:if>
+</div>

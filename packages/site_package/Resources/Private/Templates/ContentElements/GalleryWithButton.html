@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div class="page-gallery">
+        <div class="container">
+            <!-- Section Header -->
+            <f:if condition="{data.gallery_with_Button_heading}">
+                <div class="row section-row align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">{data.gallery_with_Button_subtitle}</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">{data.gallery_with_Button_heading}</h2>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- Section Title Content Start -->
+                        <div class="section-title-content">
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">{data.gallery_with_Button_description}</p>
+                        </div>
+                        <!-- Section Title Content End -->
+                    </div>
+                </div>
+            </f:if>
+
+            <!-- Gallery section start -->
+            <div class="row gallery-items page-gallery-box">
+                <f:if condition="{galleryImages}">
+                    <f:for each="{galleryImages}" as="file" iteration="iteration">
+                        <div class="col-lg-4 col-6">
+                            <!-- image gallery start -->
+                            <div class="photo-gallery wow fadeInUp" data-wow-delay="{f:if(condition: iteration.index, then: '0.{iteration.index * 2}s', else: '0s')}" data-cursor-text="{data.cursor_text}">
+                                <a href="{f:uri.image(image: file, maxWidth: '1920')}">
+                                    <figure class="image-anime">
+                                        <f:image image="{file}" alt="{file.alternative}" maxWidth="400" />
+                                    </figure>
+                                </a>
+                            </div>
+                            <!-- image gallery end -->
+                        </div>
+                    </f:for>
+                </f:if>
+            </div>
+            <!-- gallery section end -->
+
+            <!-- Button Start -->
+            <f:if condition="{data.btn_link}">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="gallery-btn wow fadeInUp" data-wow-delay="0.8s">
+                            <f:link.page pageUid="15" class="btn-default">
+                                {data.btn_text}
+                            </f:link.page>
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+            <!-- Button End -->
+        </div>
+    </div>
+
+</f:section>
+</html>

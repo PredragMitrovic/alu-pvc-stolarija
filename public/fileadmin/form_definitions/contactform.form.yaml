@@ -1,0 +1,80 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: contactForm
+label: 'Contact Form'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Email from web site'
+      recipients:
+        predrag.mitrovic2@gmail.com: Predrag
+      senderAddress: predrag.mitrovic2@gmail.com
+      senderName: ''
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+    identifier: EmailToSender
+  -
+    options:
+      subject: 'email from web site'
+      recipients:
+        predrag.mitrovic2@gmail.com: peki
+      senderAddress: predrag.mitrovic2@gmail.com
+      senderName: ''
+      replyToRecipients:
+        predrag.mitrovic2@gmail.com: peki
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: Step
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone-1
+        label: 'Telephone number'
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Email address'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Question
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty

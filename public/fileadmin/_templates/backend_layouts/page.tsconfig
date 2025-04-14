@@ -1,0 +1,49 @@
+mod.web_layout.BackendLayouts {
+    main {
+        title = Main one colum Layout
+        identifier = main
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Main
+                                colPos = 0
+                                colspan = 3
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    two_column {
+        title = Dvokolumni raspored
+        identifier = two_column
+        config {
+            backend_layout {
+                colCount = 2
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Leva kolona
+                                colPos = 0
+                            }
+                            2 {
+                                name = Desna kolona
+                                colPos = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

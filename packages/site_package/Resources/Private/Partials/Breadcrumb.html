@@ -1,0 +1,21 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+
+<v:page.breadCrumb rootLineAs="breadcrumb">
+    <ol class="breadcrumb">
+        <!-- Always include Home link -->
+        <li class="breadcrumb-item">
+            <a href="/" title="Home">home</a>
+        </li>
+
+        <!-- Show current page title -->
+        <v:variable.set name="currentPageTitle" value="{v:page.info(field: 'title')}" />
+        <v:variable.set name="currentPageUid" value="{v:page.info(field: 'uid')}" />
+
+        <f:if condition="{currentPageUid} != 1">
+            <li class="breadcrumb-item active" aria-current="page">
+                {currentPageTitle -> f:format.case(mode: 'lower')}
+            </li>
+        </f:if>
+    </ol>
+</v:page.breadCrumb>

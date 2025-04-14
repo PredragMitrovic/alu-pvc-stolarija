@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div class="latest-news">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <f:if condition="{data.section_subtitle}">
+                            <h3 class="wow fadeInUp">{data.section_subtitle}</h3>
+                        </f:if>
+                        <f:if condition="{data.section_title}">
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">{data.section_title}</h2>
+                        </f:if>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Section Title Content Start -->
+                    <f:if condition="{data.section_description}">
+                        <div class="section-title-content">
+                            <div class="wow fadeInUp" data-wow-delay="0.2s">
+                                <f:format.html>{data.section_description}</f:format.html>
+                            </div>
+                        </div>
+                    </f:if>
+                    <!-- Section Title Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</f:section>
+</html>

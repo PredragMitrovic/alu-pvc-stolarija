@@ -1,0 +1,22 @@
+<f:layout name="page" />
+
+<f:section name="content">
+    <!-- Staticki header partial -->
+    <f:render partial="header" />
+
+    <!-- Dvokolumni layout -->
+    <div class="container" style="display: flex; gap: 20px;">
+        <!-- Leva kolona: colPos=1 -->
+        <aside class="left" style="flex: 1; background-color: #f5f5f5; padding: 10px;">
+            <f:cObject typoscriptObjectPath="lib.content_1" />
+        </aside>
+
+        <!-- Glavna kolona: colPos=0 -->
+        <main class="right" style="flex: 2; background-color: #fff; padding: 10px;">
+            <f:cObject typoscriptObjectPath="lib.content_0" />
+        </main>
+    </div>
+
+    <!-- Staticki footer partial -->
+    <f:render partial="footer" />
+</f:section>

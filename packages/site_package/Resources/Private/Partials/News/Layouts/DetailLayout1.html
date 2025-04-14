@@ -1,0 +1,239 @@
+<html xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{newsItem}">
+    <f:then>
+        <!-- Page Single Post Start -->
+        <div class="page-single-post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Post Featured Image Start -->
+                        <f:if condition="{newsItem.media.0}">
+                            <div class="post-image">
+                                <figure class="image-anime reveal">
+                                    <!-- Added empty videoClass & audioClass to avoid null in RenderMediaViewHelper -->
+                                    <n:renderMedia news="{newsItem}" imgClass="img-responsive" videoClass="" audioClass="" fileIndex="0">[media]</n:renderMedia>
+                                </figure>
+                            </div>
+                        </f:if>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Single Content Start -->
+                        <div class="post-content">
+                            <!-- Title -->
+                            <div class="header">
+                                <h1 class="wow fadeInUp" itemprop="headline">{newsItem.title}</h1>
+                            </div>
+
+                            <!-- Post Entry Start -->
+                            <div class="post-entry">
+                                <!-- Teaser text -->
+                                <f:if condition="{newsItem.teaser}">
+                                    <p class="wow fadeInUp" itemprop="description">
+                                        <f:format.html>{newsItem.teaser}</f:format.html>
+                                    </p>
+                                </f:if>
+
+                                <!-- Quote section -->
+                                <!-- Quote section -->
+                                <f:if condition="{newsItem.txMyextQuote}">
+                                    <blockquote class="wow fadeInUp" data-wow-delay="0.4s">
+                                        <p>{newsItem.txMyextQuote}</p>
+                                    </blockquote>
+                                </f:if>
+
+                                <!-- Main content - first part -->
+                                <div class="news-text-wrap wow fadeInUp" data-wow-delay="0.2s" itemprop="articleBody">
+                                    <f:format.html>{newsItem.bodytext}</f:format.html>
+                                </div>
+
+
+                                <!-- If you have content elements -->
+                                <f:if condition="{newsItem.contentElements}">
+                                    <f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+                                </f:if>
+
+                                <!-- Related files -->
+                                <f:if condition="{newsItem.relatedFiles}">
+                                    <ul class="wow fadeInUp" data-wow-delay="1.2s">
+                                        <f:for each="{newsItem.relatedFiles}" as="relatedFile">
+                                            <f:if condition="{relatedFile.originalResource.publicUrl}">
+                                                <li>
+                                                    <a href="{relatedFile.originalResource.publicUrl -> f:format.htmlspecialchars()}" target="_blank">
+                                                        {f:if(condition:relatedFile.originalResource.title, then:relatedFile.originalResource.title, else:relatedFile.originalResource.name)}
+                                                    </a>
+                                                    <span class="file-size">
+                                                        {relatedFile.originalResource.size -> f:format.bytes()}
+                                                    </span>
+                                                </li>
+                                            </f:if>
+                                        </f:for>
+                                    </ul>
+                                </f:if>
+                            </div>
+                            <!-- Post Entry End -->
+
+                            <!-- Post Tag Links Start -->
+                            <div class="post-tag-links">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-8">
+                                        <!-- Post Tags Start -->
+                                        <div class="post-tags wow fadeInUp" data-wow-delay="0.5s">
+                                            <f:if condition="{newsItem.tags}">
+                                                <span class="tag-links">
+                                                    Tags:
+                                                    <f:for each="{newsItem.tags}" as="tag">
+                                                        <f:link.page pageUid="{settings.listPid}" additionalParams="{tx_news_pi1: {tag: tag.uid}}">{tag.title}</f:link.page>
+                                                    </f:for>
+                                                </span>
+                                            </f:if>
+                                        </div>
+                                        <!-- Post Tags End -->
+
+                                        <!-- Author and Date info -->
+                                        <div class="footer wow fadeInUp" data-wow-delay="0.3s">
+                                            <p>
+                                                <!-- Date -->
+                                                <f:if condition="{newsItem.datetime}">
+                                                    <span class="news-list-date">
+                                                        <time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+                                                            <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+                                                        </time>
+                                                    </span>
+                                                </f:if>
+
+                                                <f:if condition="{newsItem.categories}">
+                                                    <f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
+                                                </f:if>
+
+                                                <f:if condition="{newsItem.author}">
+                                                    <!-- Author -->
+                                                    <span class="news-list-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+                                                        <f:translate key="author_simple" /> <span itemprop="name">{newsItem.author}</span>
+                                                    </span>
+                                                </f:if>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <!-- Post Social Links Start -->
+                                        <div class="post-social-sharing wow fadeInUp" data-wow-delay="0.5s">
+                                            <f:if condition="{settings.detail.showSocialShareButtons}">
+                                                <f:if condition="{n:extensionLoaded(extensionKey:'rx_shariff')}">
+                                                    <f:render partial="Detail/Shariff" />
+                                                </f:if>
+                                                <f:comment>
+                                                    <!-- If not using rx_shariff, you can use these static social links -->
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                                    </ul>
+                                                </f:comment>
+                                            </f:if>
+                                        </div>
+                                        <!-- Post Social Links End -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Post Tag Links End -->
+
+                            <!-- Navigation -->
+                            <f:if condition="{settings.detail.showPrevNext}">
+                                <f:if condition="{newsItem.pid}">
+                                    <n:simplePrevNext pidList="{newsItem.pid}" news="{newsItem}" as="paginated" sortField="datetime">
+                                        <f:if condition="{paginated}">
+                                            <ul class="pager wow fadeInUp" data-wow-delay="0.7s">
+                                                <f:if condition="{paginated.prev}">
+                                                    <li class="previous">
+                                                        <n:link newsItem="{paginated.prev}" settings="{settings}">
+                                                            <span aria-hidden="true">&larr; </span>{paginated.prev.title}
+                                                        </n:link>
+                                                    </li>
+                                                </f:if>
+                                                <f:if condition="{paginated.next}">
+                                                    <li class="next">
+                                                        <n:link newsItem="{paginated.next}" settings="{settings}" class="next">
+                                                            {paginated.next.title} <span aria-hidden="true"> &rarr;</span>
+                                                        </n:link>
+                                                    </li>
+                                                </f:if>
+                                            </ul>
+                                        </f:if>
+                                    </n:simplePrevNext>
+                                </f:if>
+                            </f:if>
+
+                            <!-- Back link -->
+                            <f:if condition="{settings.backPid}">
+                                <div class="news-backlink-wrap wow fadeInUp" data-wow-delay="0.8s">
+                                    <f:link.page pageUid="{settings.backPid}">
+                                        <f:translate key="back-link" />
+                                    </f:link.page>
+                                </div>
+                            </f:if>
+
+                            <!-- Related news -->
+                            <f:if condition="{newsItem.allRelatedSorted}">
+                                <div class="news-related news-related-news wow fadeInUp" data-wow-delay="0.9s">
+                                    <h4>
+                                        <f:translate key="related-news" />
+                                    </h4>
+                                    <ul>
+                                        <f:for each="{newsItem.allRelatedSorted}" as="related">
+                                            <li>
+                                                <f:if condition="{related.datetime}">
+                                                    <span class="news-related-news-date">
+                                                        <f:format.date format="{f:translate(key:'dateFormat')}">{related.datetime}</f:format.date>
+                                                    </span>
+                                                </f:if>
+                                                <n:link newsItem="{related}" settings="{settings}" title="{related.title}">
+                                                    {related.title}
+                                                </n:link>
+                                            </li>
+                                        </f:for>
+                                    </ul>
+                                </div>
+                            </f:if>
+
+                            <!-- Related links -->
+                            <f:if condition="{newsItem.relatedLinks}">
+                                <div class="news-related news-related-links wow fadeInUp" data-wow-delay="1.0s">
+                                    <h4>
+                                        <f:translate key="related-links" />
+                                    </h4>
+                                    <ul>
+                                        <f:for each="{newsItem.relatedLinks}" as="relatedLink">
+                                            <li>
+                                                <f:if condition="{relatedLink.uri}">
+                                                    <f:then>
+                                                        <f:link.typolink parameter="{relatedLink.uri}" title="{relatedLink.title}" target="{n:targetLink(link:relatedLink.uri)}">
+                                                            {f:if(condition: relatedLink.title, then: relatedLink.title, else: relatedLink.uri)}
+                                                        </f:link.typolink>
+                                                    </f:then>
+                                                    <f:else>
+                                                        {f:if(condition: relatedLink.title, then: relatedLink.title, else: '')}
+                                                    </f:else>
+                                                </f:if>
+                                                <f:if condition="{relatedLink.description}">
+                                                    <span>{relatedLink.description}</span>
+                                                </f:if>
+                                            </li>
+                                        </f:for>
+                                    </ul>
+                                </div>
+                            </f:if>
+                        </div>
+                        <!-- Post Single Content End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Single Post End -->
+    </f:then>
+    <f:else>
+        <!-- No news item found -->
+    </f:else>
+</f:if>
+</html>

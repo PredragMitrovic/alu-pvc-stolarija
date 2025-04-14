@@ -1,0 +1,91 @@
+<f:if condition="{data.is_inner_page}">
+    <f:then>
+        <!-- Inner Page Banner -->
+        <div class="hero parallaxie"
+
+            style="background-image: url({f:uri.image(image: backgroundImage.0.originalFile, maxWidth: 1920)})"
+        >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Page Header Box Start -->
+                        <div class="page-header-box">
+                            <h1 class="text-anime-style-3" data-cursor="-opaque">{data.header}</h1>
+                            <nav class="wow fadeInUp">
+                                <f:render partial="Breadcrumb" arguments="{_all}" />
+                            </nav>
+                        </div>
+                        <!-- Page Header Box End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </f:then>
+    <f:else>
+        <div class="hero parallaxie"
+
+             style="background-image: url({f:uri.image(image: backgroundImage.0.originalFile, maxWidth: 1920)})"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <div class="section-title dark-section">
+                                <h3 class="wow fadeInUp">{data.subheader}</h3>
+                                <h1 class="text-anime-style-3" data-cursor="-opaque">{data.header}</h1>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">{data.bodytext -> f:format.html()}</p>
+                            </div>
+
+                            <div class="hero-btn wow fadeInUp" data-wow-delay="0.4s">
+                                <f:link.page pageUid="17" class="btn-default">
+                                    <f:translate key="hero.cta.getQuote" extensionName="SitePackage"/>
+                                </f:link.page>
+
+                                <f:link.page pageUid="2" class="btn-default btn-highlighted">
+                                    <f:translate key="learnMore" extensionName="SitePackage"/>
+                                </f:link.page>
+                            </div>
+
+                            <div class="hero-content-body">
+                                <div class="satisfy-client-images">
+                                    <f:if condition="{images}">
+                                        <div class="satisfy-client-img">
+                                            <figure class="image-anime reveal">
+                                                <f:image image="{images.0.originalFile}" maxWidth="100" alt=""/>
+                                            </figure>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{images2}">
+                                        <div class="satisfy-client-img">
+                                            <figure class="image-anime reveal">
+                                                <f:image image="{images2.0.originalFile}" maxWidth="100" alt=""/>
+                                            </figure>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{images3}">
+                                        <div class="satisfy-client-img">
+                                            <figure class="image-anime reveal">
+                                                <f:image image="{images3.0.originalFile}" maxWidth="100" alt=""/>
+                                            </figure>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{images4}">
+                                        <div class="satisfy-client-img">
+                                            <figure class="image-anime reveal">
+                                                <f:image image="{images4.0.originalFile}" maxWidth="100" alt=""/>
+                                            </figure>
+                                        </div>
+                                    </f:if>
+                                </div>
+                                <div class="hero-counter-box">
+                                    <p>{data.quote_text} <span class="counter">{data.quote_number}</span>+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </f:else>
+</f:if>
+

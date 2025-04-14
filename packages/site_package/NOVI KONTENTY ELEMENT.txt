@@ -1,0 +1,164 @@
+
+
+/**
+ * VODIČ: KAKO SE PRAVI FLUID CONTENT ELEMENT U TYPO3 13
+ * Primer: Hero Banner content element u Site Package ekstenziji
+ * Ekstenzija: site_package
+ */
+
+// 📁 1. STRUKTURA EKSTENZIJE (minimalni deo za content element):
+// packages/site_package/
+// ├── Configuration/
+// │   ├── TCA/
+// │   │   └── tt_content_hero.php       ➔ Ovde pravimo registraciju TCA polja
+// │   └── TsConfig/
+// │       └── mod_wizards.tsconfig         ➔ Wizard dugme u backendu
+// ├── Resources/
+// │   ├── Private/
+// │   │   ├── Language/
+// │   │   │   └── locallang_db.xlf         ➔ Prevod labela
+// │   │   └── Templates/
+// │   │       └── ContentElements/
+// │   │           └── HeroBanner.html       ➔ Fluid templejt
+// │   └── Public/
+// │       ├── Css/
+// │       └── Images/
+// └── ext_localconf.php                     ➔ Pozivanje fajla tt_content_hero.php
+
+
+// 📅 2. EXT_LOCALCONF.PHP
+// Dodaj na kraj fajla packages/site_package/ext_localconf.php:
+
+if (!defined('TYPO3')) {
+    die('Access denied.');
+}
+
+// Učitaj registraciju za tvoj content element
+call_user_func(function () {
+    include_once('Configuration/TCA/tt_content_hero.php');
+});
+
+
+// 📃 3. TCA DEFINICIJA: tt_content_hero.php
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'hero_title' => [
+        'exclude' => 0,
+        'label' => 'Hero Title',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+        ],
+    ],
+    'hero_image' => [
+        'exclude' => 0,
+        'label' => 'Hero Background Image',
+        'config' => [
+            'type' => 'file',
+            'appearance' => [
+                'createNewRelationLinkTitle' => 'Add Image'
+            ],
+            'maxitems' => 1,
+            'foreign_types' => [
+                '0' => [
+                    'showitem' => '--palette--;;imageoverlayPalette',
+                ],
+            ],
+        ],
+    ]
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content',
+    'hero_title, hero_image',
+    'hero_banner',
+    'after:header'
+);
+
+// Registracija CType-a
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+    "<INCLUDE_TYPOSCRIPT: source=\"FILE:EXT:site_package/Configuration/TsConfig/mod_wizards.tsconfig\">"
+);
+
+
+// 🏘️ 4. FLUID TEMPLATE (HeroBanner.html)
+
+/**
+ * Putanja: Resources/Private/Templates/ContentElements/HeroBanner.html
+ */
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <div class="hero-banner" style="background-image: url('{f:uri.image(image: '{data.hero_image.0}')}");">
+        <div class="hero-inner">
+            <h1>{data.hero_title}</h1>
+        </div>
+    </div>
+</f:section>
+
+
+// 📝 5. TSConfig Wizard Dugme (mod_wizards.tsconfig)
+
+mod.wizards.newContentElement.wizardItems.sitepackage {
+    header = Custom Elements
+    elements {
+        hero_banner {
+            iconIdentifier = content-image
+            title = Hero Banner
+            description = Banner with background and title
+            tt_content_defValues {
+                CType = hero_banner
+            }
+        }
+    }
+    show = *
+}
+
+
+// 📖 6. locallang_db.xlf
+// Resources/Private/Language/locallang_db.xlf
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2025-03-21T10:00:00Z" product-name="site_package">
+    <header/>
+    <body>
+      <trans-unit id="tt_content.hero_title.label">
+        <source>Hero Title</source>
+      </trans-unit>
+      <trans-unit id="tt_content.hero_image.label">
+        <source>Hero Image</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
+
+
+// ✨ 7. TypoScript Setup za rendering
+// Dodaj u EXT:site_package/Configuration/TypoScript/setup.typoscript
+
+lib.contentElementHeroBanner = FLUIDTEMPLATE
+lib.contentElementHeroBanner {
+  templateName = HeroBanner
+  templateRootPaths.10 = EXT:site_package/Resources/Private/Templates/ContentElements/
+  layoutRootPaths.10 = EXT:site_package/Resources/Private/Layouts/
+  partialRootPaths.10 = EXT:site_package/Resources/Private/Partials/
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    10 {
+      references.fieldName = hero_image
+    }
+  }
+}
+
+tt_content.hero_banner =< lib.contentElementHeroBanner
+
+
+// 🔹 8. Favicon primer:
+page {
+  shortcutIcon = EXT:site_package/Resources/Public/Images/favicon.ico
+}
+
+// ✅ Sad možeš da vidiš novi element u backendu i koristiš ga kao bilo koji drugi.
+// Ako ti treba sledeći primer sa select boxom, textarea, multi-image itd. samo reci!
