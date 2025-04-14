@@ -1,64 +1,78 @@
+
 renderingOptions:
   submitButtonLabel: Submit
 type: Form
 identifier: contactForm
-label: "Contact Form"
+label: 'Contact Form'
 prototypeName: standard
 finishers:
-  - options:
-      subject: "Email from web site"
+  -
+    options:
+      subject: 'Email from web site'
       recipients:
         predrag.mitrovic2@gmail.com: Predrag
       senderAddress: predrag.mitrovic2@gmail.com
-      senderName: ""
+      senderName: ''
       addHtmlPart: true
       attachUploads: true
-      title: ""
+      title: ''
     identifier: EmailToSender
-  - options:
-      subject: "email from web site"
+  -
+    options:
+      subject: 'email from web site'
       recipients:
         predrag.mitrovic2@gmail.com: peki
       senderAddress: predrag.mitrovic2@gmail.com
-      senderName: ""
+      senderName: ''
       replyToRecipients:
         predrag.mitrovic2@gmail.com: peki
       addHtmlPart: true
       attachUploads: true
       translation:
         language: Default
-      title: ""
+      title: ''
     identifier: EmailToReceiver
 renderables:
-  - renderingOptions:
-      previousButtonLabel: "Previous step"
-      nextButtonLabel: "Next step"
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
     type: Page
     identifier: page-1
     label: Step
     renderables:
-      - defaultValue: ""
+      -
+        defaultValue: ''
         type: Text
         identifier: text-1
         label: Text
         properties:
           fluidAdditionalAttributes:
             placeholder: Name
-      - defaultValue: ""
+      -
+        defaultValue: ''
         type: Telephone
         identifier: telephone-1
-        label: "Telephone number"
-      - defaultValue: ""
+        label: 'Telephone number'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Phone number'
+      -
+        defaultValue: ''
         type: Email
         identifier: email-1
-        label: "Email address"
+        label: 'Email address'
         properties:
           fluidAdditionalAttributes:
             required: required
+            placeholder: 'Email adres'
         validators:
-          - identifier: EmailAddress
-          - identifier: NotEmpty
-      - defaultValue: ""
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
         type: Textarea
         identifier: textarea-1
         label: Question
@@ -66,4 +80,5 @@ renderables:
           fluidAdditionalAttributes:
             required: required
         validators:
-          - identifier: NotEmpty
+          -
+            identifier: NotEmpty
