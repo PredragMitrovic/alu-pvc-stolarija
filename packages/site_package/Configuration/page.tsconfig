@@ -80,16 +80,14 @@ tx_news.templateLayouts {
       6 = Detail Layout 3
 }
 
-mod.wizards.newContentElement.wizardItems.common {
-    elements {
-        map_contact_form {
-            iconIdentifier = content-text
-            title = Map & Contact Form
-            description = Adds Google Map with a contact form
-            tt_content_defValues {
-                CType = map_contact_form
-            }
+# EXT:site_package/Configuration/PageTS/ContentElements.typoscript
+mod.wizards.newContentElement.wizardItems.special.elements {
+    map_contact_form {
+        iconIdentifier = content-map-contact
+        title = Map & Contact Form
+        description = Displays Google Map with Contact Form
+        tt_content_defValues {
+            CType = map_contact_form
         }
     }
-    show := addToList(map_contact_form)
 }
