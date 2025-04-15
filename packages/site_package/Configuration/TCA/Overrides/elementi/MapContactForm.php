@@ -13,11 +13,22 @@ defined('TYPO3') or die();
     'after'
 );
 
+// Configure the fields
+
+$mapContactFormFields = [
+
+
+];
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $mapContactFormFields);
+
 $GLOBALS['TCA']['tt_content']['types']['map_contact_form'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
+            section_title,
+            section_subtitle,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
             --palette--;;hidden,
             --palette--;;access,
