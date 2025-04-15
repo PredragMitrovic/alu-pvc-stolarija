@@ -99,7 +99,7 @@ return [
         'transport_sendmail_command' => '',
         'transport_smtp_encrypt' => false,
         'transport_smtp_password' => '',
-        'transport_smtp_server' => 'localhost:25',
+        'transport_smtp_server' => 'localhost:1025',
         'transport_smtp_username' => '',
     ],
     'SYS' => [

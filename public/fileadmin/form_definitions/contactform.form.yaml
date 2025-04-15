@@ -32,31 +32,30 @@ finishers:
         language: Default
       title: ''
     identifier: EmailToReceiver
+  -
+    options:
+      message: 'Thank yo for contact us!'
+      contentElementUid: ''
+    identifier: Confirmation
 renderables:
   -
     renderingOptions:
-      previousButtonLabel: 'Previous step'
-      nextButtonLabel: 'Next step'
+      previousButtonLabel: ''
+      nextButtonLabel: ''
     type: Page
     identifier: page-1
-    label: Step
+    label: ''
     renderables:
       -
         defaultValue: ''
         type: Text
         identifier: text-1
-        label: Text
-        properties:
-          fluidAdditionalAttributes:
-            placeholder: Name
+        label: 'Name / Kompanija'
       -
         defaultValue: ''
         type: Telephone
         identifier: telephone-1
         label: 'Telephone number'
-        properties:
-          fluidAdditionalAttributes:
-            placeholder: 'Phone number'
       -
         defaultValue: ''
         type: Email
@@ -65,7 +64,6 @@ renderables:
         properties:
           fluidAdditionalAttributes:
             required: required
-            placeholder: 'Email adres'
         validators:
           -
             identifier: EmailAddress
