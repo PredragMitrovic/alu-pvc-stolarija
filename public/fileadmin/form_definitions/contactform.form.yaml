@@ -1,12 +1,14 @@
 renderingOptions:
-  submitButtonLabel: Submit
+  translation:
+    translationFiles:
+      10: "EXT:site_package/Resources/Private/Language/locallang.xlf"
 type: Form
 identifier: contactForm
 label: "Contact Form"
 prototypeName: standard
 finishers:
   - options:
-      subject: "Email from web site"
+      subject: "Contact form submission"
       recipients:
         predrag.mitrovic2@gmail.com: Predrag
       senderAddress: predrag.mitrovic2@gmail.com
@@ -16,7 +18,7 @@ finishers:
       title: ""
     identifier: EmailToSender
   - options:
-      subject: "email from web site"
+      subject: "Contact form submission"
       recipients:
         predrag.mitrovic2@gmail.com: peki
       senderAddress: predrag.mitrovic2@gmail.com
@@ -30,7 +32,7 @@ finishers:
       title: ""
     identifier: EmailToReceiver
   - options:
-      message: "Thank yo for contact us!"
+      message: "Thank you for your message!"
       contentElementUid: ""
     identifier: Confirmation
 renderables:
@@ -44,15 +46,15 @@ renderables:
       - defaultValue: ""
         type: Text
         identifier: text-1
-        label: "Name / Kompanija"
+        label: "Name/Company"
       - defaultValue: ""
         type: Telephone
         identifier: telephone-1
-        label: "Telephone number"
+        label: "Telephone"
       - defaultValue: ""
         type: Email
         identifier: email-1
-        label: "Email address"
+        label: "Email"
         properties:
           fluidAdditionalAttributes:
             required: required
@@ -62,7 +64,7 @@ renderables:
       - defaultValue: ""
         type: Textarea
         identifier: textarea-1
-        label: Question
+        label: "Message"
         properties:
           fluidAdditionalAttributes:
             required: required
