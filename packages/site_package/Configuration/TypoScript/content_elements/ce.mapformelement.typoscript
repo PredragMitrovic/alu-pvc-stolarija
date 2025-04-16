@@ -1,0 +1,21 @@
+tt_content.map_contact_form = COA
+tt_content.map_contact_form {
+    10 = FLUIDTEMPLATE
+    10 {
+        file = EXT:site_package/Resources/Private/Templates/ContentElements/MapContactForm.html
+        
+        variables {
+            formContent = USER
+            formContent {
+                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+                extensionName = Form
+                pluginName = Formframework
+                vendorName = TYPO3\CMS
+                
+                settings {
+                    persistenceIdentifier = fileadmin/form_definitions/contactform.form.yaml
+                }
+            }
+        }
+    }
+}

@@ -8,6 +8,11 @@
 /fileadmin/_processed_/
 /fileadmin/user_upload/
 /uploads/
+/var/
+/var/cache/
+/var/cache/code/
+/var/cache/code/fluid_template/
+/var/cache/code/fluid_template/*.php
 
 # Composer
 /vendor/

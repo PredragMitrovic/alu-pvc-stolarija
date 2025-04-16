@@ -124,6 +124,76 @@
         <source>Saznajte više</source>
         <target>Saznajte više</target>
       </trans-unit>
+
+
+
+
+            <!-- Form General -->
+            <trans-unit id="contactForm.label" approved="yes">
+                <source>Contact Form</source>
+                <target>Kontakt forma</target>
+            </trans-unit>
+            <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+                <source>Submit</source>
+                <target>Pošalji</target>
+            </trans-unit>
+            
+            <!-- Form Fields -->
+            <trans-unit id="element.text-1.properties.label" approved="yes">
+                <source>Name/Company</source>
+                <target>Ime/Kompanija</target>
+            </trans-unit>
+            <trans-unit id="element.telephone-1.properties.label" approved="yes">
+                <source>Telephone</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="element.email-1.properties.label" approved="yes">
+                <source>Email</source>
+                <target>Email adresa</target>
+            </trans-unit>
+            <trans-unit id="element.textarea-1.properties.label" approved="yes">
+                <source>Message</source>
+                <target>Poruka</target>
+            </trans-unit>
+            
+            <!-- Finisher Options -->
+            <trans-unit id="finisher.EmailToSender.subject" approved="yes">
+                <source>Contact form submission</source>
+                <target>Poslata kontakt forma</target>
+            </trans-unit>
+            <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
+                <source>Contact form submission</source>
+                <target>Poslata kontakt forma</target>
+            </trans-unit>
+            <trans-unit id="finisher.Confirmation.message" approved="yes">
+                <source>Thank you for your message! We will get back to you as soon as possible.</source>
+                <target>Hvala na Vašoj poruci! Odgovorićemo Vam u najkraćem mogućem roku.</target>
+            </trans-unit>
+            
+            <!-- Form-specific Translations -->
+            <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
+                <source>Your message has been received</source>
+                <target>Vaša poruka je primljena</target>
+            </trans-unit>
+            <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
+                <source>New contact form submission</source>
+                <target>Nova poruka putem kontakt forme</target>
+            </trans-unit>
+            <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
+                <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
+                <target>Hvala što ste nas kontaktirali! Uskoro ćemo odgovoriti na Vaš upit.</target>
+            </trans-unit>
+            
+            <!-- Validation Error Messages -->
+            <trans-unit id="validation.error.1221560910" approved="yes">
+                <source>This field is required</source>
+                <target>Ovo polje je obavezno</target>
+            </trans-unit>
+            <trans-unit id="validation.error.1221559976" approved="yes">
+                <source>Please enter a valid email address</source>
+                <target>Molimo unesite validnu email adresu</target>
+            </trans-unit>
+
     </body>
   </file>
 </xliff>

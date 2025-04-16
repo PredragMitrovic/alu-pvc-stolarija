@@ -129,7 +129,6 @@ config._LOCAL_LANG {
 @import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.kontakt.typoscript''
 @import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.mapformelement.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/Plugins/news.typoscript'
-@import 'EXT:site_package/Configuration/TypoScript/ContentElement/ContactForm.typoscript'
 
 page.999 = TEXT
 page.999.value = SITE PACKAGE TS IS LOADED
@@ -137,36 +136,4 @@ page.999.wrap = <!--|-->
 
 tx_sitepackage {
     storagePid = 7  # Replace 123 with your actual storage folder PID
-}
-
-# Register content element
-tt_content {
-    contactform =< lib.contentElement
-    contactform {
-        templateName = ContactForm
-        templateRootPaths {
-            10 = EXT:site_package/Resources/Private/Templates/ContentElements/
-        }
-        partialRootPaths {
-            10 = EXT:site_package/Resources/Private/Partials/ContentElements/
-        }
-        layoutRootPaths {
-            10 = EXT:site_package/Resources/Private/Layouts/ContentElements/
-        }
-        dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-                references.fieldName = image
-            }
-        }
-    }
-}
-
-# Form configuration
-plugin.tx_form {
-    settings {
-        yamlConfigurations {
-            100 = EXT:site_package/Configuration/Yaml/FormSetup.yaml
-        }
-    }
 }

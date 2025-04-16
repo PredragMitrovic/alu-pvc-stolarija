@@ -1,14 +1,12 @@
 renderingOptions:
-  translation:
-    translationFiles:
-      10: "EXT:site_package/Resources/Private/Language/locallang.xlf"
+  submitButtonLabel: Submit
 type: Form
 identifier: contactForm
 label: "Contact Form"
 prototypeName: standard
 finishers:
   - options:
-      subject: "Contact form submission"
+      subject: "Email from web site"
       recipients:
         predrag.mitrovic2@gmail.com: Predrag
       senderAddress: predrag.mitrovic2@gmail.com
@@ -18,7 +16,7 @@ finishers:
       title: ""
     identifier: EmailToSender
   - options:
-      subject: "Contact form submission"
+      subject: "email from web site"
       recipients:
         predrag.mitrovic2@gmail.com: peki
       senderAddress: predrag.mitrovic2@gmail.com
@@ -31,30 +29,29 @@ finishers:
         language: Default
       title: ""
     identifier: EmailToReceiver
-  - options:
-      message: "Thank you for your message!"
-      contentElementUid: ""
-    identifier: Confirmation
 renderables:
   - renderingOptions:
-      previousButtonLabel: ""
-      nextButtonLabel: ""
+      previousButtonLabel: "Previous step"
+      nextButtonLabel: "Next step"
     type: Page
     identifier: page-1
-    label: ""
+    label: Step
     renderables:
       - defaultValue: ""
         type: Text
         identifier: text-1
-        label: "Name/Company"
+        label: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
       - defaultValue: ""
         type: Telephone
         identifier: telephone-1
-        label: "Telephone"
+        label: "Telephone number"
       - defaultValue: ""
         type: Email
         identifier: email-1
-        label: "Email"
+        label: "Email address"
         properties:
           fluidAdditionalAttributes:
             required: required
@@ -64,7 +61,7 @@ renderables:
       - defaultValue: ""
         type: Textarea
         identifier: textarea-1
-        label: "Message"
+        label: Question
         properties:
           fluidAdditionalAttributes:
             required: required

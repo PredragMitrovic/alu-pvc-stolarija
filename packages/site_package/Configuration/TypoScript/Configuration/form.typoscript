@@ -1,0 +1,19 @@
+# Register the content element
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.mapformelement.typoscript'
+
+# Include form rendering
+module.tx_form {
+    settings {
+        yamlConfigurations {
+            100 = EXT:site_package/Configuration/Form/FormSetup.yaml
+        }
+    }
+}
+
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            100 = EXT:site_package/Configuration/Form/FormSetup.yaml
+        }
+    }
+}s

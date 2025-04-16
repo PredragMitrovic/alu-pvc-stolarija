@@ -126,6 +126,106 @@
       </trans-unit>
 
 
+      <trans-unit id="contact.formTitle">
+        <source>Contact Form</source>
+        <target>Kontaktformular</target>
+      </trans-unit>s
+      <trans-unit id="contact.nameCompany">
+        <source>Name / Company</source>
+        <target>Name / Firma</target>
+      </trans-unit>
+      <trans-unit id="contact.telephone">
+        <source>Telephone number</source>
+        <target>Telefonnummer</target>
+      </trans-unit>
+      <trans-unit id="contact.email">
+        <source>Email address</source>
+        <target>E-Mail-Adresse</target>
+      </trans-unit>
+      <trans-unit id="contact.message">
+        <source>Message</source>
+        <target>Nachricht</target>
+      </trans-unit>
+      <trans-unit id="contact.submit">
+        <source>Send</source>
+        <target>Senden</target>
+      </trans-unit>
+      <trans-unit id="contact.emailSubject">
+        <source>Email from web site</source>
+        <target>E-Mail von der Website</target>
+      </trans-unit>
+      <trans-unit id="contact.thankYouMessage">
+        <source>Thank you for contacting us!</source>
+        <target>Vielen Dank für Ihre Kontaktaufnahme!</target>
+      </trans-unit>
+
+
+<!-- Form General -->
+            <trans-unit id="contactForm.label" approved="yes">
+                <source>Contact Form</source>
+                <target>Kontaktformular</target>
+            </trans-unit>
+            <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+                <source>Submit</source>
+                <target>Absenden</target>
+            </trans-unit>
+            
+            <!-- Form Fields -->
+            <trans-unit id="element.text-1.properties.label" approved="yes">
+                <source>Name/Company</source>
+                <target>Name/Firma</target>
+            </trans-unit>
+            <trans-unit id="element.telephone-1.properties.label" approved="yes">
+                <source>Telephone</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="element.email-1.properties.label" approved="yes">
+                <source>Email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="element.textarea-1.properties.label" approved="yes">
+                <source>Message</source>
+                <target>Nachricht</target>
+            </trans-unit>
+            
+            <!-- Finisher Options -->
+            <trans-unit id="finisher.EmailToSender.subject" approved="yes">
+                <source>Contact form submission</source>
+                <target>Kontaktformular-Einsendung</target>
+            </trans-unit>
+            <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
+                <source>Contact form submission</source>
+                <target>Kontaktformular-Einsendung</target>
+            </trans-unit>
+            <trans-unit id="finisher.Confirmation.message" approved="yes">
+                <source>Thank you for your message! We will get back to you as soon as possible.</source>
+                <target>Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.</target>
+            </trans-unit>
+            
+            <!-- Form-specific Translations -->
+            <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
+                <source>Your message has been received</source>
+                <target>Ihre Nachricht wurde empfangen</target>
+            </trans-unit>
+            <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
+                <source>New contact form submission</source>
+                <target>Neue Kontaktformular-Einsendung</target>
+            </trans-unit>
+            <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
+                <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
+                <target>Vielen Dank für Ihre Kontaktaufnahme! Wir werden in Kürze auf Ihre Anfrage antworten.</target>
+            </trans-unit>
+            
+            <!-- Validation Error Messages -->
+            <trans-unit id="validation.error.1221560910" approved="yes">
+                <source>This field is required</source>
+                <target>Dieses Feld ist erforderlich</target>
+            </trans-unit>
+            <trans-unit id="validation.error.1221559976" approved="yes">
+                <source>Please enter a valid email address</source>
+                <target>Bitte geben Sie eine gültige E-Mail-Adresse ein</target>
+            </trans-unit>
+      
     </body>
   </file>
 </xliff>
