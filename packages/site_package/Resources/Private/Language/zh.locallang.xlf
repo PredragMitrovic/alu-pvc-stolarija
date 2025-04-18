@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="zh" datatype="plaintext" original="messages" date="2025-03-21T00:00:00Z">
+    <body>
+      <trans-unit id="footer.callToAction">
+    <source>Let's create your custom product!</source>
+    <target>为您量身定制铝合金门窗</target>
+  </trans-unit>
+  <trans-unit id="footer.contactUs">
+    <source>Contact us today</source>
+    <target>立即联系我们</target>
+  </trans-unit>
+  <trans-unit id="footer.companyDescription">
+    <source>Company description</source>
+    <target>ALU-PVC Bogdanović - 您可靠的铝合金和PVC门窗合作伙伴。我们提供定制生产和专业安装窗户、门、外墙和配件。质量、精确度和客户满意度是我们业务的基础。</target>
+  </trans-unit>
+  <trans-unit id="footer.navigation">
+    <source>Navigation</source>
+    <target>导航</target>
+  </trans-unit>
+  <trans-unit id="footer.nav.home">
+    <source>Home</source>
+    <target>首页</target>
+  </trans-unit>
+  <trans-unit id="footer.nav.about">
+    <source>About</source>
+    <target>关于我们</target>
+  </trans-unit>
+  <trans-unit id="footer.nav.alu">
+    <source>ALU Joinery</source>
+    <target>铝合金门窗</target>
+  </trans-unit>
+  <trans-unit id="footer.nav.pvc">
+    <source>PVC Joinery</source>
+    <target>PVC门窗</target>
+  </trans-unit>
+  <trans-unit id="footer.nav.gallery">
+    <source>Gallery</source>
+    <target>图库</target>
+  </trans-unit>
+  <trans-unit id="footer.nav.blog">
+    <source>Novosti</source>
+    <target>新闻</target>
+  </trans-unit>
+  <trans-unit id="footer.nav.contact">
+    <source>Contact</source>
+    <target>联系方式</target>
+  </trans-unit>
+  <trans-unit id="footer.contact">
+    <source>Contact</source>
+    <target>联系方式</target>
+  </trans-unit>
+  <trans-unit id="footer.address">
+    <source>Address</source>
+    <target>贝尔格莱德，塞尔维亚</target>
+  </trans-unit>
+  <trans-unit id="footer.newsletterTitle">
+    <source>Get the latest news</source>
+    <target>获取最新消息</target>
+  </trans-unit>
+  <trans-unit id="footer.newsletterPlaceholder">
+    <source>Enter your email</source>
+    <target>输入您的电子邮箱</target>
+  </trans-unit>
+  <trans-unit id="footer.rights">
+    <source>All rights reserved.</source>
+    <target>版权所有。</target>
+  </trans-unit>
+  <trans-unit id="footer.privacy">
+    <source>Privacy Policy</source>
+    <target>隐私政策</target>
+  </trans-unit>
+  <trans-unit id="footer.cookies">
+    <source>Cookie Policy</source>
+    <target>Cookie政策</target>
+  </trans-unit>
+
+    <trans-unit id="topbar.address">
+        <source>Beograd, Srbija</source>
+        <target>贝尔格莱德，塞尔维亚</target>
+      </trans-unit>
+      <trans-unit id="topbar.promoText">
+        <source>Zakažite besplatnu konsultaciju već danas!</source>
+        <target>立即预约免费咨询！</target>
+      </trans-unit>
+      <trans-unit id="topbar.workingHours">
+        <source>Pon – Pet: 09h – 17h</source>
+        <target>周一至周五：09时 – 17时</target>
+      </trans-unit>
+
+      <trans-unit id="hero.cta.getQuote">
+    <source>Zatražite ponudu</source>
+    <target>获取报价</target>
+  </trans-unit>
+  <trans-unit id="learnMore">
+    <source>Saznajte više</source>
+    <target>了解更多</target>
+  </trans-unit>
+
+
+        <trans-unit id="contactForm.label" approved="yes">
+            <source>Contact Form</source>
+            <target>联系表单</target>
+        </trans-unit>
+        <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+            <source>Submit</source>
+            <target>提交</target>
+        </trans-unit>
+        
+        <!-- Form Fields -->
+        <trans-unit id="element.text-1.properties.label" approved="yes">
+            <source>Name/Company</source>
+            <target>姓名/公司</target>
+        </trans-unit>
+        <trans-unit id="element.telephone-1.properties.label" approved="yes">
+            <source>Telephone</source>
+            <target>电话</target>
+        </trans-unit>
+        <trans-unit id="element.email-1.properties.label" approved="yes">
+            <source>Email</source>
+            <target>电子邮箱</target>
+        </trans-unit>
+        <trans-unit id="element.textarea-1.properties.label" approved="yes">
+            <source>Message</source>
+            <target>留言</target>
+        </trans-unit>
+        
+        <!-- Finisher Options -->
+        <trans-unit id="finisher.EmailToSender.subject" approved="yes">
+            <source>Contact form submission</source>
+            <target>联系表单提交</target>
+        </trans-unit>
+        <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
+            <source>Contact form submission</source>
+            <target>联系表单提交</target>
+        </trans-unit>
+        <trans-unit id="finisher.Confirmation.message" approved="yes">
+            <source>Thank you for your message! We will get back to you as soon as possible.</source>
+            <target>感谢您的留言！我们将尽快回复您。</target>
+        </trans-unit>
+        
+        <!-- Form-specific Translations -->
+        <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
+            <source>Your message has been received</source>
+            <target>您的留言已收到</target>
+        </trans-unit>
+        <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
+            <source>New contact form submission</source>
+            <target>新的联系表单提交</target>
+        </trans-unit>
+        <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
+            <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
+            <target>感谢您与我们联系！我们将尽快回复您的咨询。</target>
+        </trans-unit>
+        
+        <!-- Validation Error Messages -->
+        <trans-unit id="validation.error.1221560910" approved="yes">
+            <source>This field is required</source>
+            <target>此字段为必填项</target>
+        </trans-unit>
+        <trans-unit id="validation.error.1221559976" approved="yes">
+            <source>Please enter a valid email address</source>
+            <target>请输入有效的电子邮箱地址</target>
+        </trans-unit>
+
+        <!-- Form labels -->
+        <trans-unit id="form.contactForm.label">
+            <source>Contact Form</source>
+            <target>联系表单</target>
+        </trans-unit>
+        
+        <!-- Email subjects -->
+        <trans-unit id="form.contactForm.email.subject">
+            <source>Contact form submission</source>
+            <target>联系表单提交</target>
+        </trans-unit>
+        
+        <!-- Confirmation message -->
+        <trans-unit id="form.contactForm.confirmation.message">
+            <source>Thank you for your message!</source>
+            <target>感谢您的留言！</target>
+        </trans-unit>
+        
+        <!-- Form fields -->
+        <trans-unit id="form.contactForm.fields.name.label">
+            <source>Name/Company</source>
+            <target>姓名/公司</target>
+        </trans-unit>
+        
+        <trans-unit id="form.contactForm.fields.telephone.label">
+            <source>Telephone</source>
+            <target>电话</target>
+        </trans-unit>
+        
+        <trans-unit id="form.contactForm.fields.email.label">
+            <source>Email</source>
+            <target>电子邮箱</target>
+        </trans-unit>
+        
+        <trans-unit id="form.contactForm.fields.message.label">
+            <source>Message</source>
+            <target>留言</target>
+        </trans-unit>
+    </body>
+  </file>
+</xliff>
