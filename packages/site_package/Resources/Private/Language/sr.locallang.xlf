@@ -2,6 +2,14 @@
 <xliff version="1.0">
   <file source-language="sr" datatype="plaintext" original="messages" date="2025-03-21T00:00:00Z">
     <body>
+
+    
+      <trans-unit id="more-link">
+        <source>Detaljnije</source>
+        <target>Detaljnije</target>
+      </trans-unit>
+
+
       <trans-unit id="footer.company">
         <source>Moja firma</source>
         <target>Moja firma</target>
@@ -107,8 +115,8 @@
         <target>Beograd, Srbija</target>
       </trans-unit>
       <trans-unit id="topbar.promoText">
-        <source>Zakažite besplatnu konsultaciju već danas!</source>
-        <target>Zakažite besplatnu konsultaciju već danas!</target>
+        <source>Alu, PVC profili - raspon cena:</source>
+        <target>Alu, PVC profili - raspon cena:</target>
       </trans-unit>
       <trans-unit id="topbar.workingHours">
         <source>Pon – Pet: 09h – 17h</source>

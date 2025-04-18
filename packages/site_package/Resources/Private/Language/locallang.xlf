@@ -107,8 +107,8 @@
         <target>Belgrade, Serbia</target>
       </trans-unit>
       <trans-unit id="topbar.promoText">
-        <source>Book your free consultation today!</source>
-        <target>Book your free consultation today!</target>
+        <source>Aluminum, PVC profiles – price range:</source>
+        <target>Aluminum, PVC profiles – price range:</target>
       </trans-unit>
       <trans-unit id="topbar.workingHours">
         <source>Mon – Fri: 09 AM – 05 PM</source>
@@ -124,42 +124,6 @@
         <source>Learn More</source>
         <target>Learn More</target>
       </trans-unit>
-
-
-
-    <trans-unit id="contact.formTitle">
-      <source>Contact Form</source>
-      <target>Contact Form</target>
-    </trans-unit>
-    <trans-unit id="contact.nameCompany">
-      <source>Name / Company</source>
-      <target>Name / Company</target>
-    </trans-unit>
-    <trans-unit id="contact.telephone">
-      <source>Telephone number</source>
-      <target>Telephone number</target>
-    </trans-unit>
-    <trans-unit id="contact.email">
-      <source>Email address</source>
-      <target>Email address</target>
-    </trans-unit>
-    <trans-unit id="contact.message">
-      <source>Message</source>
-      <target>Message</target>
-    </trans-unit>
-    <trans-unit id="contact.submit">
-      <source>Send</source>
-      <target>Send</target>
-    </trans-unit>
-    <trans-unit id="contact.emailSubject">
-      <source>Email from web site</source>
-      <target>Email from web site</target>
-    </trans-unit>
-    <trans-unit id="contact.thankYouMessage">
-      <source>Thank you for contacting us!</source>
-      <target>Thank you for contacting us!</target>
-    </trans-unit>
-
 
   <!-- Form General -->
             <trans-unit id="contactForm.label" approved="yes">
