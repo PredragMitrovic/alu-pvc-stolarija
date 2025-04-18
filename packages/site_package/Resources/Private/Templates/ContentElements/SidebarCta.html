@@ -1,0 +1,59 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <!-- Sidebar CTA Box Start -->
+    <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
+        <!-- Sidebar CTA Content Start -->
+        <div class="sidebar-cta-title">
+            <h2>{data.tri_link}</h2>
+        </div>
+        <!-- Sidebar CTA Content End -->
+
+        <!-- Sidebar CTA Contact Start -->
+        <div class="sidebar-cta-contact">
+            <!-- Location Item Start -->
+            <f:if condition="{data.cetiri_link}">
+                <div class="sidebar-cta-contact-item">
+                    <div class="icon-box">
+                        <img src="images/icon-location.svg" alt="">
+                      </div>
+                    <div class="cta-contact-item-content">
+                        <p>{data.cetiri_link}</p>
+                    </div>
+                </div>
+            </f:if>
+            <!-- Location Item End -->
+
+            <!-- Phone Item Start -->
+            <f:if condition="{data.pet_link}">
+                <div class="sidebar-cta-contact-item">
+                    <div class="icon-box">
+                        <img src="images/icon-phone.svg" alt="">
+                      </div>
+                    <div class="cta-contact-item-content">
+                        <p>{data.pet_link}</p>
+                    </div>
+                </div>
+            </f:if>
+            <!-- Phone Item End -->
+
+            <!-- Email Item Start -->
+            <f:if condition="{data.sest_link}">
+                <div class="sidebar-cta-contact-item">
+                    <div class="icon-box">
+                        <img src="images/icon-mail.svg" alt="">
+                      </div>
+                    <div class="cta-contact-item-content">
+                        <p>{data.sest_link}</p>
+                    </div>
+                </div>
+            </f:if>
+            <!-- Email Item End -->
+        </div>
+        <!-- Sidebar CTA Contact End -->
+    </div>
+    <!-- Sidebar CTA Box End -->
+
+</f:section>
+</html>

@@ -31,12 +31,11 @@
 								</f:for>
 							</f:then>
 							<f:else>
-								<f:if condition="{settings.list.paginate.insertAbove}">
-									<f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
-								</f:if>
 								<f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="iterator">
 									<f:if condition="{settings.templateLayout} == 1">
-										<f:render partial="News/Layouts/ListLayout1" arguments="{_all}" />
+										<div class="col-lg-4 col-md-6">
+											<f:render partial="News/Layouts/ListLayout1" arguments="{_all}" />
+										</div>
 									</f:if>
 									<f:if condition="{settings.templateLayout} == 2">
 										<f:render partial="News/Layouts/ListLayout2" arguments="{_all}" />

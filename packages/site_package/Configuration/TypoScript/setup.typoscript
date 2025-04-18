@@ -126,7 +126,8 @@ config._LOCAL_LANG {
 @import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.title.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.singleimage.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.leftmenu.typoscript'
-@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.kontakt.typoscript''
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.kontakt.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.sidebar_cta.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/content_elements/ce.mapformelement.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/Plugins/news.typoscript'
 

@@ -1,13 +1,17 @@
 plugin.tx_news {
   view {
     templateRootPaths {
+      0 = EXT:news/Resources/Private/Templates/
       200 = EXT:site_package/Resources/Private/Templates/
     }
     partialRootPaths {
+      0 = EXT:news/Resources/Private/Partials/
       200 = EXT:site_package/Resources/Private/Partials/
     }
     layoutRootPaths {
+      0 = EXT:news/Resources/Private/Layouts/
       200 = EXT:site_package/Resources/Private/Layouts/
     }
   }
 }
+

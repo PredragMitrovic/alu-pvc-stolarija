@@ -5000,3 +5000,51 @@ span.btn-group.next.submit {
     margin-bottom: .5rem;
     margin-top: .5rem;
 }
+
+
+.post-item-content h2 {
+    height: 50px;
+}
+
+.post-item {
+    background: #f5f5f5;
+}
+
+.post-item-body {
+    padding: 10px;
+}
+
+.post-item-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.kalkulator   button  {
+background-color: #3450a3 !important;
+}
+
+.kalkulator i {
+    color: #3450a3 !important;
+}
+
+.kalkulator .form-check-input:checked {
+    background-color: #3450a3 !important;
+    border-color: #3450a3 !important;
+}
+
+.kalkulator button i {
+    color: #ffffff !important;
+}
+
+.sidebar-cta-box {
+    margin-bottom: 40px;
+}
+
+.nav-menu-wrapper .submenu > a.nav-link {
+    pointer-events: none;
+    cursor: default;
+    /* Opciono: vizuelna indikacija da link nije klikabilan */
+    opacity: 0.8;
+}
