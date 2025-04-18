@@ -212,6 +212,38 @@
             <trans-unit id="validation.error.1221559976" approved="yes">
                 <source>Please enter a valid email address</source>
             </trans-unit>
+
+            <!-- Form labels -->
+            <trans-unit id="form.contactForm.label">
+                <source>Contact Form</source>
+            </trans-unit>
+            
+            <!-- Email subjects -->
+            <trans-unit id="form.contactForm.email.subject">
+                <source>Contact form submission</source>
+            </trans-unit>
+            
+            <!-- Confirmation message -->
+            <trans-unit id="form.contactForm.confirmation.message">
+                <source>Thank you for your message!</source>
+            </trans-unit>
+            
+            <!-- Form fields -->
+            <trans-unit id="form.contactForm.fields.name.label">
+                <source>Name/Company</source>
+            </trans-unit>
+            
+            <trans-unit id="form.contactForm.fields.telephone.label">
+                <source>Telephone</source>
+            </trans-unit>
+            
+            <trans-unit id="form.contactForm.fields.email.label">
+                <source>Email</source>
+            </trans-unit>
+            
+            <trans-unit id="form.contactForm.fields.message.label">
+                <source>Message</source>
+            </trans-unit>
     </body>
   </file>
 </xliff>

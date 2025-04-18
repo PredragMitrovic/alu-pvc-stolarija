@@ -4,11 +4,11 @@ renderingOptions:
       10: "EXT:site_package/Resources/Private/Language/locallang.xlf"
 type: Form
 identifier: contactForm
-label: "Contact Form"
+label: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.label"
 prototypeName: standard
 finishers:
   - options:
-      subject: "Contact form submission"
+      subject: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.email.subject"
       recipients:
         predrag.mitrovic2@gmail.com: Predrag
       senderAddress: predrag.mitrovic2@gmail.com
@@ -18,7 +18,7 @@ finishers:
       title: ""
     identifier: EmailToSender
   - options:
-      subject: "Contact form submission"
+      subject: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.email.subject"
       recipients:
         predrag.mitrovic2@gmail.com: peki
       senderAddress: predrag.mitrovic2@gmail.com
@@ -32,7 +32,7 @@ finishers:
       title: ""
     identifier: EmailToReceiver
   - options:
-      message: "Thank you for your message!"
+      message: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.confirmation.message"
       contentElementUid: ""
     identifier: Confirmation
 renderables:
@@ -46,15 +46,15 @@ renderables:
       - defaultValue: ""
         type: Text
         identifier: text-1
-        label: "Name/Company"
+        label: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.fields.name.label"
       - defaultValue: ""
         type: Telephone
         identifier: telephone-1
-        label: "Telephone"
+        label: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.fields.telephone.label"
       - defaultValue: ""
         type: Email
         identifier: email-1
-        label: "Email"
+        label: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.fields.email.label"
         properties:
           fluidAdditionalAttributes:
             required: required
@@ -64,7 +64,7 @@ renderables:
       - defaultValue: ""
         type: Textarea
         identifier: textarea-1
-        label: "Message"
+        label: "LLL:EXT:site_package/Resources/Private/Language/locallang.xlf:form.contactForm.fields.message.label"
         properties:
           fluidAdditionalAttributes:
             required: required
