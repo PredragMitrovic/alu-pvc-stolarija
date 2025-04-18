@@ -66,6 +66,11 @@
                     <img src="/images/de.png" width="24" class="rounded-circle"> DE
                 </f:link.page>
             </li>
+            <li>
+                <f:link.page class="dropdown-item d-flex align-items-center gap-2" additionalParams="{L: 3}">
+                    <img src="/images/zh.png" width="24" class="rounded-circle"> 中文
+                </f:link.page>
+            </li>
         </ul>
     </div>
 
@@ -73,27 +78,30 @@
         document.addEventListener('DOMContentLoaded', function () {
             const button = document.getElementById('dropdownLang');
             const currentPath = window.location.pathname;
-
+    
             // Inicijalno postavi trenutni jezik na osnovu URL-a
             if (currentPath.startsWith('/en/')) {
                 button.innerHTML = '<img src="/images/en.png" width="24" class="rounded-circle"> EN';
             } else if (currentPath.startsWith('/de/')) {
                 button.innerHTML = '<img src="/images/de.png" width="24" class="rounded-circle"> DE';
+            } else if (currentPath.startsWith('/zh/')) {
+                button.innerHTML = '<img src="/images/zh.png" width="24" class="rounded-circle"> 中文';
             } else {
                 button.innerHTML = '<img src="/images/sr.png" width="24" class="rounded-circle"> SR';
             }
-
+    
             // Slušaj klik na svaki item u dropdownu da ažurira dugme pre nego što browser ode na novu stranicu
             const items = document.querySelectorAll('.dropdown-menu .dropdown-item');
             items.forEach(item => {
                 item.addEventListener('click', function (e) {
-                    const lang = this.getAttribute('data-lang');
-                    const img = this.getAttribute('data-img');
+                    const lang = this.textContent.trim();
+                    const img = this.querySelector('img').getAttribute('src');
                     button.innerHTML = `<img src="${img}" width="24" class="rounded-circle"> ${lang}`;
                 });
             });
         });
     </script>
+    
 
 
 

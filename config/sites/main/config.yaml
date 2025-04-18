@@ -14,10 +14,6 @@ languages:
     flag: rs
     hreflang: sr-RS
     websiteTitle: 'Aluminijumska stolarija'
-    dependencies:
-      - typo3/seo-sitemap
-    fallbackType: strict
-    fallbacks: ''
   -
     title: English
     enabled: true
@@ -29,7 +25,7 @@ languages:
     hreflang: en-US
     websiteTitle: 'Aluminum Joinery'
     fallbackType: fallback
-    fallbacks: '0'
+    fallbacks: '0,2,3'
   -
     title: German
     enabled: true
@@ -39,14 +35,26 @@ languages:
     navigationTitle: Deutsch
     flag: de
     hreflang: de-DE
-    websiteTitle: 'Aluminium-Fenster'
+    websiteTitle: Aluminium-Fenster
     fallbackType: fallback
-    fallbacks: '0,1'
+    fallbacks: '0,1,3'
+  -
+    title: Chinese
+    enabled: true
+    languageId: 3
+    base: /zh/
+    locale: zh_CN.UTF-8
+    navigationTitle: Chinese
+    hreflang: zh-CN
+    fallbackType: fallback
+    fallbacks: '0,2,1'
+    websiteTitle: 铝合金门窗
+    flag: cn
 rootPageId: 1
-websiteTitle: 'Aluminijumska stolarija'
 routeEnhancers:
   PageTypeSuffix:
     type: PageType
     map:
       /: 0
       sitemap.xml: 1533906435
+websiteTitle: 'Aluminijumska stolarija'
