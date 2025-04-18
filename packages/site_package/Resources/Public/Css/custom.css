@@ -5020,3 +5020,24 @@ span.btn-group.next.submit {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.kalkulator   button  {
+background-color: #3450a3 !important;
+}
+
+.kalkulator i {
+    color: #3450a3 !important;
+}
+
+.kalkulator .form-check-input:checked {
+    background-color: #3450a3 !important;
+    border-color: #3450a3 !important;
+}
+
+.kalkulator button i {
+    color: #ffffff !important;
+}
+
+.sidebar-cta-box {
+    margin-bottom: 40px;
+}
