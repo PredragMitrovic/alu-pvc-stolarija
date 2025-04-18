@@ -5041,3 +5041,10 @@ background-color: #3450a3 !important;
 .sidebar-cta-box {
     margin-bottom: 40px;
 }
+
+.nav-menu-wrapper .submenu > a.nav-link {
+    pointer-events: none;
+    cursor: default;
+    /* Opciono: vizuelna indikacija da link nije klikabilan */
+    opacity: 0.8;
+}
