@@ -5048,3 +5048,261 @@ background-color: #3450a3 !important;
     /* Opciono: vizuelna indikacija da link nije klikabilan */
     opacity: 0.8;
 }
+
+
+
+/* tabl inner sites hero baner */
+
+/* Modern Responsive Table Styling */
+.table {
+	width: 100%;
+	margin: 2rem 0;
+	border-collapse: collapse;
+  }
+  
+  .contenttable {
+	width: 100%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.95);
+	transition: all 0.3s ease;
+  }
+  
+  .contenttable thead {
+	background: linear-gradient(135deg, #3498db, #1a5276);
+	color: white;
+  }
+  
+  .contenttable th {
+	padding: 16px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 16px;
+	position: relative;
+  }
+  
+  .contenttable thead tr:first-child th {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 20px 16px;
+  }
+  
+  .contenttable thead tr:first-child th:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40px;
+	height: 3px;
+	background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .contenttable ul {
+	padding-left: 20px;
+	margin: 8px 0;
+  }
+  
+  .contenttable ul li {
+	padding: 6px 0;
+	position: relative;
+  }
+  
+  .contenttable ul li:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f00c";
+	font-weight: 900;
+	position: absolute;
+	left: -28px;
+	color: white;
+	font-size: 22px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+	.contenttable {
+	  border-radius: 6px;
+	}
+	
+	.contenttable th {
+	  padding: 14px 12px;
+	  font-size: 15px;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.contenttable {
+	  display: block;
+	}
+	
+	.contenttable thead, 
+	.contenttable tbody {
+	  display: block;
+	}
+	
+	.contenttable thead tr {
+	  display: none;
+	}
+	
+	.contenttable tbody tr {
+	  margin-bottom: 20px;
+	  display: block;
+	  border-bottom: 2px solid #eee;
+	}
+	
+	.contenttable th {
+	  display: block;
+	  text-align: center;
+	  position: relative;
+	  padding: 16px;
+	  background: linear-gradient(135deg, #3498db, #1a5276);
+	  color: white;
+	  margin: 0 -1px;
+	}
+	
+	.contenttable th:before {
+	  content: attr(data-title);
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	  display: block;
+	  margin-bottom: 8px;
+	  font-size: 13px;
+	  color: rgba(255, 255, 255, 0.7);
+	}
+	
+	.contenttable ul {
+	  padding-left: 5px;
+	}
+	
+	.contenttable ul li {
+	  padding: 8px 0;
+	}
+	
+	.contenttable ul li:before {
+	  left: -18;
+	  font-size: 14px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.contenttable th {
+	  padding: 14px 10px;
+	  font-size: 14px;
+	}
+	
+	.contenttable ul li {
+	  font-size: 14px;
+	}
+  }
+  
+  /* Hover effects */
+  .contenttable tbody tr:hover {
+	background-color: rgba(52, 152, 219, 0.05);
+  }
+  
+  .contenttable ul li:hover:before {
+	transform: scale(1.2);
+	color: #2980b9;
+  }
+  
+  /* Animation for list items */
+  .contenttable ul li {
+	opacity: 0;
+	animation: fadeIn 0.3s forwards;
+	animation-delay: calc(var(--item-index, 0) * 0.1s);
+	list-style-type: none !important;
+  }
+
+  .contenttable tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    background: #3450a3;
+    color: white !important;
+}
+  
+  @keyframes fadeIn {
+	from { opacity: 0; transform: translateY(5px); }
+	to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Apply item indices for staggered animation */
+  .contenttable ul li:nth-child(1) { --item-index: 1; }
+  .contenttable ul li:nth-child(2) { --item-index: 2; }
+  .contenttable ul li:nth-child(3) { --item-index: 3; }
+  .contenttable ul li:nth-child(4) { --item-index: 4; }
+  .contenttable ul li:nth-child(5) { --item-index: 5; }
+  
+  /* Print styles */
+  @media print {
+	.contenttable {
+	  box-shadow: none;
+	  border: 1px solid #ddd;
+	}
+	
+	.contenttable thead {
+	  background: #f5f5f5;
+	  color: #333;
+	}	
+	
+	.contenttable th:after {
+	  display: none;
+	}
+  }
+  
+ .pregrade .hero.parallaxie .col-lg-8,  .klizni .hero.parallaxie .col-lg-8 {
+	width: 100% !important;
+	min-width: 100% !important;
+ }
+
+ .pregrade  .about-us .col-lg-6, .pregrade .our-faqs .col-lg-6, .klizni .about-us .col-lg-6, .klizni .our-faqs .col-lg-6 {
+ width: 100% !important;
+ min-width: 100% !important;
+}
+
+
+
+
+.pregrade  .about-us > .container > .row, .klizni .about-us > .container > .row {
+	display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.pregrade  .about-us > .container > .row .about-image, .klizni .about-us > .container > .row .about-image {
+	padding-left: 5vw;
+}
+
+.pregrade  .about-us, .klizni .about-us {
+	padding-top: 0;
+}
+
+.pregrade .about-us  .about-facility-box, .klizni .about-us  .about-facility-box {
+	margin-top: 0;	
+}
+
+.pregrade .our-faqs-img, .klizni .our-faqs-img {
+	display: none;
+}
+
+.image-embed-item {
+	margin-bottom: 40px;
+}
+
+.klizni .col-lg-8 .mormon .col-lg-4 .post-item-content h2 {
+	font-size: 18px;
+}
+
+.klizni .col-lg-8 > div > div > div > .latest-news {
+	padding: 0;
+}
+
+.accordion-item {
+    color: white !important;
+}
+
+.fasade .post-item-content h2 {
+    height: 70px;
+}
