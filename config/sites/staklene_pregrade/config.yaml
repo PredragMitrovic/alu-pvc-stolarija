@@ -1,4 +1,4 @@
-base: "taklene-pregrade.local"
+base: "http://staklene-pregrade.local/"
 errorHandling:
   - errorCode: 404
     errorHandler: Fluid
