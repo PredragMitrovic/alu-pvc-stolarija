@@ -13,6 +13,11 @@
 		},
 		"sort-packages": true
 	},
+	"extra" : {
+		"typo3/cms": {
+			"web-dir": "public_html"
+		}
+	},
 	"require": {
 		"fluidtypo3/flux": "*",
 		"fluidtypo3/vhs": "^7.1",
