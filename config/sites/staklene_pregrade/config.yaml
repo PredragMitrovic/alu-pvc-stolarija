@@ -1,4 +1,4 @@
-base: "staklene-pregrade.rs"
+base: "taklene-pregrade.local"
 errorHandling:
   - errorCode: 404
     errorHandler: Fluid
