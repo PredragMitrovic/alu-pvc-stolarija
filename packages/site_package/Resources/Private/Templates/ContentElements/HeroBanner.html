@@ -37,13 +37,15 @@
                             </div>
 
                             <div class="hero-btn wow fadeInUp" data-wow-delay="0.4s">
-                                <f:link.page pageUid="17" class="btn-default">
-                                    <f:translate key="hero.cta.getQuote" extensionName="SitePackage"/>
-                                </f:link.page>
+                                <f:if condition="{data.cetiri_link}">
+                                    <f:link.typolink parameter="{data.cetiri_link}" class="btn-default"> {data.service_title_1}</f:link.typolink>
+                                </f:if>
 
-                                <f:link.page pageUid="2" class="btn-default btn-highlighted">
-                                    <f:translate key="learnMore" extensionName="SitePackage"/>
-                                </f:link.page>
+                                <f:if condition="{data.sest_link}">
+                                    <f:link.typolink parameter="{data.sest_link}" class="btn-default btn-highlighted "> 
+                                        {data.service_title_2}
+                                    </f:link.typolink>
+                                </f:if>
                             </div>
 
                             <div class="hero-content-body">

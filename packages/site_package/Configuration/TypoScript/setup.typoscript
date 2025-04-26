@@ -99,7 +99,10 @@ plugin.tx_fed {
 }
 
 
-
+page.10.variables {
+  rootPageId = TEXT
+  rootPageId.data = site:rootPageId
+}
 
 
 config._LOCAL_LANG {
