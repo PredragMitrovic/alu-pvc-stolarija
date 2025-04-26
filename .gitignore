@@ -2,7 +2,9 @@
 /typo3temp/*
 
 
-
+/public/_assets/
+/public/index.php
+/public/typo3/
 
 /var/
 /var/cache/
