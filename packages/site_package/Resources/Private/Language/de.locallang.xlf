@@ -28,51 +28,111 @@
       </trans-unit>
 
 
-      <trans-unit id="footer.callToAction">
-        <source>Let's create your custom product!</source>
-        <target>Maßgeschneiderte Aluminium-Fenster und Türen</target>
+      <!-- Nemački -->
+<trans-unit id="footer.callToAction">
+        <target>Aluminium-Tischlerei nach Maß</target>
       </trans-unit>
+
+<trans-unit
+        id="footer.callToAction45">
+        <target>Maßgefertigte Glasabtrennungen mit professioneller Montage</target>
+      </trans-unit>
+
+<trans-unit
+        id="footer.callToAction44">
+        <target>Maßgeschneiderte Schiebesysteme mit professioneller Montage</target>
+      </trans-unit>
+
+<trans-unit
+        id="footer.callToAction43">
+        <target>Maßgefertigte Glasfassaden mit professioneller Montage</target>
+      </trans-unit>
+
+<trans-unit
+        id="footer.callToAction47">
+        <target>Vakuumheber für Glas</target>
+      </trans-unit>
+
+
+
+
+
+
+
       <trans-unit id="footer.contactUs">
         <source>Contact us today</source>
         <target>Kontaktieren Sie uns</target>
       </trans-unit>
-      <trans-unit id="footer.companyDescription">
+      <trans-unit
+        id="footer.companyDescription">
         <source>Company description</source>
-        <target>ALU-PVC Bogdanović – Ihr zuverlässiger Partner für Aluminium- und PVC-Tischlerei. Wir bieten maßgeschneiderte Produktion und professionelle Montage von Fenstern, Türen, Fassaden und Zubehör. Qualität, Präzision und Kundenzufriedenheit sind die Grundlagen unseres Geschäfts.</target>
+        <target>ALU-PVC Bogdanović – Ihr zuverlässiger Partner für Aluminium- und PVC-Tischlerei.
+          Wir bieten maßgeschneiderte Produktion und professionelle Montage von Fenstern, Türen,
+      Fassaden und Zubehör. Qualität, Präzision und Kundenzufriedenheit sind die Grundlagen unseres
+      Geschäfts.</target>
       </trans-unit>
       <trans-unit id="footer.navigation">
         <source>Navigation</source>
         <target>Navigation</target>
       </trans-unit>
-      <trans-unit id="footer.nav.home">
-        <source>Home</source>
-        <target>Startseite</target>
+
+
+
+      <trans-unit id="footer.1nav">
+        <target>Aluminiumfenster</target>
       </trans-unit>
-      <trans-unit id="footer.nav.about">
-        <source>About</source>
-        <target>Über uns</target>
+      <trans-unit id="footer.2nav">
+        <target>Aluminiumtüren</target>
       </trans-unit>
-      <trans-unit id="footer.nav.alu">
-        <source>ALU Joinery</source>
-        <target>ALU Tischlerei</target>
+      <trans-unit id="footer.3nav">
+        <target>PVC-Türen</target>
       </trans-unit>
-      <trans-unit id="footer.nav.pvc">
-        <source>PVC Joinery</source>
-        <target>PVC Tischlerei</target>
+      <trans-unit id="footer.4nav">
+        <target>PVC-Fenster</target>
       </trans-unit>
-      <trans-unit id="footer.nav.gallery">
-        <source>Gallery</source>
-        <target>Galerie</target>
+      <trans-unit id="footer.5nav">
+        <target>Aluminium-Holz-Türen</target>
       </trans-unit>
-      <trans-unit id="footer.nav.blog">
-        <source>Novosti</source>
-        <target>Neuigkeiten</target>
+      <trans-unit id="footer.6nav">
+        <target>Aluminium-Holz-Fenster</target>
       </trans-unit>
-      <trans-unit id="footer.nav.contact">
-        <source>Contact</source>
-        <target>Kontakt</target>
+      <trans-unit id="footer.7nav">
+        <target>Fenster- und Türpreis-Rechner</target>
       </trans-unit>
-      <trans-unit id="footer.contact">
+      
+      <trans-unit
+        id="footer.1nav45">
+        <target>Glastrennwände</target>
+      </trans-unit>
+      <trans-unit id="footer.2nav45">
+        <target>Glaswände</target>
+      </trans-unit>
+      <trans-unit id="footer.3nav45">
+        <target>Glassysteme</target>
+      </trans-unit>
+      <trans-unit id="footer.4nav45">
+        <target>Glaspaneele</target>
+      </trans-unit>
+
+      <trans-unit id="footer.1nav44">
+        <target>Schiebetüren aus Glas</target>
+      </trans-unit>
+      <trans-unit id="footer.2nav44">
+        <target>Schiebepaneele</target>
+      </trans-unit>
+      <trans-unit id="footer.3nav44">
+        <target>Schiebewände</target>
+      </trans-unit>
+      <trans-unit id="footer.4nav44">
+        <target>Großflächige Glasschiebeanlagen</target>
+      </trans-unit>
+      
+      
+
+
+      
+      <trans-unit
+        id="footer.contact">
         <source>Contact</source>
         <target>Kontakt</target>
       </trans-unit>
@@ -84,11 +144,13 @@
         <source>Get the latest news</source>
         <target>Erhalten Sie die neuesten Nachrichten</target>
       </trans-unit>
-      <trans-unit id="footer.newsletterPlaceholder">
+      <trans-unit
+        id="footer.newsletterPlaceholder">
         <source>Enter your email</source>
         <target>Geben Sie Ihre E-Mail-Adresse ein</target>
       </trans-unit>
-      <trans-unit id="footer.rights">
+      <trans-unit
+        id="footer.rights">
         <source>All rights reserved.</source>
         <target>Alle Rechte vorbehalten.</target>
       </trans-unit>
@@ -110,13 +172,15 @@
         <source>Alu, PVC-Profile – Preisspanne:</source>
         <target>Alu, PVC-Profile – Preisspanne:</target>
       </trans-unit>
-      <trans-unit id="topbar.workingHours">
+      <trans-unit
+        id="topbar.workingHours">
         <source>Mo – Fr: 09:00 – 17:00 Uhr</source>
         <target>Mo – Fr: 09:00 – 17:00 Uhr</target>
       </trans-unit>
 
 
-      <trans-unit id="hero.cta.getQuote">
+      <trans-unit
+        id="hero.cta.getQuote">
         <source>Zatražite ponudu</source>
         <target>Angebot anfordern</target>
       </trans-unit>
@@ -129,8 +193,7 @@
       <trans-unit id="contact.formTitle">
         <source>Contact Form</source>
         <target>Kontaktformular</target>
-      </trans-unit>s
-      <trans-unit id="contact.nameCompany">
+      </trans-unit>s <trans-unit id="contact.nameCompany">
         <source>Name / Company</source>
         <target>Name / Firma</target>
       </trans-unit>
@@ -154,78 +217,95 @@
         <source>Email from web site</source>
         <target>E-Mail von der Website</target>
       </trans-unit>
-      <trans-unit id="contact.thankYouMessage">
+      <trans-unit
+        id="contact.thankYouMessage">
         <source>Thank you for contacting us!</source>
         <target>Vielen Dank für Ihre Kontaktaufnahme!</target>
       </trans-unit>
 
 
-<!-- Form General -->
-            <trans-unit id="contactForm.label" approved="yes">
-                <source>Contact Form</source>
-                <target>Kontaktformular</target>
-            </trans-unit>
-            <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
-                <source>Submit</source>
-                <target>Absenden</target>
-            </trans-unit>
-            
-            <!-- Form Fields -->
-            <trans-unit id="element.text-1.properties.label" approved="yes">
-                <source>Name/Company</source>
-                <target>Name/Firma</target>
-            </trans-unit>
-            <trans-unit id="element.telephone-1.properties.label" approved="yes">
-                <source>Telephone</source>
-                <target>Telefon</target>
-            </trans-unit>
-            <trans-unit id="element.email-1.properties.label" approved="yes">
-                <source>Email</source>
-                <target>E-Mail</target>
-            </trans-unit>
-            <trans-unit id="element.textarea-1.properties.label" approved="yes">
-                <source>Message</source>
-                <target>Nachricht</target>
-            </trans-unit>
-            
-            <!-- Finisher Options -->
-            <trans-unit id="finisher.EmailToSender.subject" approved="yes">
-                <source>Contact form submission</source>
-                <target>Kontaktformular-Einsendung</target>
-            </trans-unit>
-            <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
-                <source>Contact form submission</source>
-                <target>Kontaktformular-Einsendung</target>
-            </trans-unit>
-            <trans-unit id="finisher.Confirmation.message" approved="yes">
-                <source>Thank you for your message! We will get back to you as soon as possible.</source>
-                <target>Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.</target>
-            </trans-unit>
-            
-            <!-- Form-specific Translations -->
-            <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
-                <source>Your message has been received</source>
-                <target>Ihre Nachricht wurde empfangen</target>
-            </trans-unit>
-            <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
-                <source>New contact form submission</source>
-                <target>Neue Kontaktformular-Einsendung</target>
-            </trans-unit>
-            <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
-                <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
-                <target>Vielen Dank für Ihre Kontaktaufnahme! Wir werden in Kürze auf Ihre Anfrage antworten.</target>
-            </trans-unit>
-            
-            <!-- Validation Error Messages -->
-            <trans-unit id="validation.error.1221560910" approved="yes">
-                <source>This field is required</source>
-                <target>Dieses Feld ist erforderlich</target>
-            </trans-unit>
-            <trans-unit id="validation.error.1221559976" approved="yes">
-                <source>Please enter a valid email address</source>
-                <target>Bitte geben Sie eine gültige E-Mail-Adresse ein</target>
-            </trans-unit>
-      
+      <!-- Form General -->
+            <trans-unit
+        id="contactForm.label" approved="yes">
+        <source>Contact Form</source>
+        <target>Kontaktformular</target>
+      </trans-unit>
+            <trans-unit
+        id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+        <source>Submit</source>
+        <target>Absenden</target>
+      </trans-unit>
+
+      <!-- Form Fields -->
+            <trans-unit id="element.text-1.properties.label"
+        approved="yes">
+        <source>Name/Company</source>
+        <target>Name/Firma</target>
+      </trans-unit>
+            <trans-unit
+        id="element.telephone-1.properties.label" approved="yes">
+        <source>Telephone</source>
+        <target>Telefon</target>
+      </trans-unit>
+            <trans-unit id="element.email-1.properties.label"
+        approved="yes">
+        <source>Email</source>
+        <target>E-Mail</target>
+      </trans-unit>
+            <trans-unit
+        id="element.textarea-1.properties.label" approved="yes">
+        <source>Message</source>
+        <target>Nachricht</target>
+      </trans-unit>
+
+      <!-- Finisher Options -->
+            <trans-unit id="finisher.EmailToSender.subject"
+        approved="yes">
+        <source>Contact form submission</source>
+        <target>Kontaktformular-Einsendung</target>
+      </trans-unit>
+            <trans-unit
+        id="finisher.EmailToReceiver.subject" approved="yes">
+        <source>Contact form submission</source>
+        <target>Kontaktformular-Einsendung</target>
+      </trans-unit>
+            <trans-unit
+        id="finisher.Confirmation.message" approved="yes">
+        <source>Thank you for your message! We will get back to you as soon as possible.</source>
+        <target>Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen
+      melden.</target>
+      </trans-unit>
+
+      <!-- Form-specific Translations -->
+            <trans-unit id="contactForm.finisher.EmailToSender.subject"
+        approved="yes">
+        <source>Your message has been received</source>
+        <target>Ihre Nachricht wurde empfangen</target>
+      </trans-unit>
+            <trans-unit
+        id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
+        <source>New contact form submission</source>
+        <target>Neue Kontaktformular-Einsendung</target>
+      </trans-unit>
+            <trans-unit
+        id="contactForm.finisher.Confirmation.message" approved="yes">
+        <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
+        <target>Vielen Dank für Ihre Kontaktaufnahme! Wir werden in Kürze auf Ihre Anfrage
+          antworten.</target>
+      </trans-unit>
+
+      <!-- Validation Error Messages -->
+            <trans-unit id="validation.error.1221560910"
+        approved="yes">
+        <source>This field is required</source>
+        <target>Dieses Feld ist erforderlich</target>
+      </trans-unit>
+            <trans-unit
+        id="validation.error.1221559976" approved="yes">
+        <source>Please enter a valid email address</source>
+        <target>Bitte geben Sie eine gültige E-Mail-Adresse ein</target>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>

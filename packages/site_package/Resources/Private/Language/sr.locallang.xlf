@@ -3,7 +3,7 @@
   <file source-language="sr" datatype="plaintext" original="messages" date="2025-03-21T00:00:00Z">
     <body>
 
-    
+
       <trans-unit id="more-link">
         <source>Detaljnije</source>
         <target>Detaljnije</target>
@@ -14,7 +14,7 @@
         <source>Moja firma</source>
         <target>Moja firma</target>
       </trans-unit>
-          <trans-unit id="contact.title">
+      <trans-unit id="contact.title">
         <source>Contact Us</source>
         <target>Kontaktirajte nas</target>
       </trans-unit>
@@ -37,49 +37,93 @@
 
 
       <trans-unit id="footer.callToAction">
-        <source>Let's create your custom product!</source>
         <target>Aluminijumska stolarija po meri</target>
       </trans-unit>
+
+      <trans-unit id="footer.callToAction45">
+        <target>Staklene pregrade po meri sa profesionalnom ugradnjom</target>
+      </trans-unit>
+
+      <trans-unit id="footer.callToAction44">
+        <target>Klizni sistemi po meri sa profesionalnom ugradnjom</target>
+      </trans-unit>
+
+      <trans-unit id="footer.callToAction43">
+        <target>Staklene fasade po meri sa profesionalnom ugradnjom</target>
+      </trans-unit>
+
+      <trans-unit id="footer.callToAction47">
+        <target>Vakum dizalica za staklo</target>
+      </trans-unit>
+
+
       <trans-unit id="footer.contactUs">
         <source>Contact us today</source>
         <target>Kontaktirajte nas</target>
       </trans-unit>
       <trans-unit id="footer.companyDescription">
         <source>Company description</source>
-        <target>ALU-PVC Bogdanović – vaš pouzdan partner za aluminijumsku i PVC stolariju. Bavimo se proizvodnjom po meri i profesionalnom ugradnjom prozora, vrata, fasada i prateće opreme. Kvalitet, preciznost i zadovoljstvo klijenata su temelji našeg poslovanja.</target>
+        <target>ALU-PVC Bogdanović – vaš pouzdan partner za aluminijumsku i PVC stolariju. Bavimo se
+          proizvodnjom po meri i profesionalnom ugradnjom prozora, vrata, fasada i prateće opreme.
+          Kvalitet, preciznost i zadovoljstvo klijenata su temelji našeg poslovanja.</target>
       </trans-unit>
+
+
       <trans-unit id="footer.navigation">
         <source>Navigation</source>
         <target>Navigacija</target>
       </trans-unit>
-      <trans-unit id="footer.nav.home">
-        <source>Home</source>
-        <target>Početna</target>
+
+
+      <trans-unit id="footer.1nav">
+        <target>Aluminijumski prozori</target>
       </trans-unit>
-      <trans-unit id="footer.nav.about">
-        <source>About</source>
-        <target>O nama</target>
+      <trans-unit id="footer.2nav">
+        <target>Aluminijumska vrata</target>
       </trans-unit>
-      <trans-unit id="footer.nav.alu">
-        <source>ALU Joinery</source>
-        <target>ALU stolarija</target>
+      <trans-unit id="footer.3nav">
+        <target>PVC vrata</target>
       </trans-unit>
-      <trans-unit id="footer.nav.pvc">
-        <source>PVC Joinery</source>
-        <target>PVC stolarija</target>
+      <trans-unit id="footer.4nav">
+        <target>PVC prozori</target>
       </trans-unit>
-      <trans-unit id="footer.nav.gallery">
-        <source>Gallery</source>
-        <target>Galerija</target>
+      <trans-unit id="footer.5nav">
+        <target>Aluminijum drvo vrata</target>
       </trans-unit>
-      <trans-unit id="footer.nav.blog">
-        <source>Novosti</source>
-        <target>Novosti</target>
+      <trans-unit id="footer.6nav">
+        <target>Aluminijum drvo prozori</target>
       </trans-unit>
-      <trans-unit id="footer.nav.contact">
-        <source>Contact</source>
-        <target>Kontakt</target>
+      <trans-unit id="footer.7nav">
+        <target>Cena stolarije kalkulator</target>
       </trans-unit>
+
+
+      <trans-unit id="footer.1nav45">
+        <target>Staklene pregrade</target>
+      </trans-unit>
+      <trans-unit id="footer.2nav45">
+        <target>Stakleni zidovi</target>
+      </trans-unit>
+      <trans-unit id="footer.3nav45">
+        <target>Stakleni sistemi</target>
+      </trans-unit>
+      <trans-unit id="footer.4nav45">
+        <target>Stakleni paneli</target>
+      </trans-unit>
+
+      <trans-unit id="footer.1nav44">
+        <target>Klizna staklena vrata</target>
+      </trans-unit>
+      <trans-unit id="footer.2nav44">
+        <target>klizni paneli</target>
+      </trans-unit>
+      <trans-unit id="footer.3nav44">
+        <target>klizni zidovi</target>
+      </trans-unit>
+      <trans-unit id="footer.4nav44">
+        <target>klizne staklene stene</target>
+      </trans-unit>
+
       <trans-unit id="footer.contact">
         <source>Contact</source>
         <target>Kontakt</target>
@@ -115,8 +159,8 @@
         <target>Beograd, Srbija</target>
       </trans-unit>
       <trans-unit id="topbar.promoText">
-        <source>Alu, PVC profili - raspon cena:</source>
-        <target>Alu, PVC profili - raspon cena:</target>
+        <source>ALU / PVC profili - raspon cena:</source>
+        <target>ALU / PVC profili - raspon cena:</target>
       </trans-unit>
       <trans-unit id="topbar.workingHours">
         <source>Pon – Pet: 09h – 17h</source>
@@ -134,73 +178,71 @@
       </trans-unit>
 
 
+      <!-- Form General -->
+      <trans-unit id="contactForm.label" approved="yes">
+        <source>Contact Form</source>
+        <target>Kontakt forma</target>
+      </trans-unit>
+      <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+        <source>Submit</source>
+        <target>Pošalji</target>
+      </trans-unit>
 
+      <!-- Form Fields -->
+      <trans-unit id="element.text-1.properties.label" approved="yes">
+        <source>Name/Company</source>
+        <target>Ime/Kompanija</target>
+      </trans-unit>
+      <trans-unit id="element.telephone-1.properties.label" approved="yes">
+        <source>Telephone</source>
+        <target>Telefon</target>
+      </trans-unit>
+      <trans-unit id="element.email-1.properties.label" approved="yes">
+        <source>Email</source>
+        <target>Email adresa</target>
+      </trans-unit>
+      <trans-unit id="element.textarea-1.properties.label" approved="yes">
+        <source>Message</source>
+        <target>Poruka</target>
+      </trans-unit>
 
-            <!-- Form General -->
-            <trans-unit id="contactForm.label" approved="yes">
-                <source>Contact Form</source>
-                <target>Kontakt forma</target>
-            </trans-unit>
-            <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
-                <source>Submit</source>
-                <target>Pošalji</target>
-            </trans-unit>
-            
-            <!-- Form Fields -->
-            <trans-unit id="element.text-1.properties.label" approved="yes">
-                <source>Name/Company</source>
-                <target>Ime/Kompanija</target>
-            </trans-unit>
-            <trans-unit id="element.telephone-1.properties.label" approved="yes">
-                <source>Telephone</source>
-                <target>Telefon</target>
-            </trans-unit>
-            <trans-unit id="element.email-1.properties.label" approved="yes">
-                <source>Email</source>
-                <target>Email adresa</target>
-            </trans-unit>
-            <trans-unit id="element.textarea-1.properties.label" approved="yes">
-                <source>Message</source>
-                <target>Poruka</target>
-            </trans-unit>
-            
-            <!-- Finisher Options -->
-            <trans-unit id="finisher.EmailToSender.subject" approved="yes">
-                <source>Contact form submission</source>
-                <target>Poslata kontakt forma</target>
-            </trans-unit>
-            <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
-                <source>Contact form submission</source>
-                <target>Poslata kontakt forma</target>
-            </trans-unit>
-            <trans-unit id="finisher.Confirmation.message" approved="yes">
-                <source>Thank you for your message! We will get back to you as soon as possible.</source>
-                <target>Hvala na Vašoj poruci! Odgovorićemo Vam u najkraćem mogućem roku.</target>
-            </trans-unit>
-            
-            <!-- Form-specific Translations -->
-            <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
-                <source>Your message has been received</source>
-                <target>Vaša poruka je primljena</target>
-            </trans-unit>
-            <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
-                <source>New contact form submission</source>
-                <target>Nova poruka putem kontakt forme</target>
-            </trans-unit>
-            <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
-                <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
-                <target>Hvala što ste nas kontaktirali! Uskoro ćemo odgovoriti na Vaš upit.</target>
-            </trans-unit>
-            
-            <!-- Validation Error Messages -->
-            <trans-unit id="validation.error.1221560910" approved="yes">
-                <source>This field is required</source>
-                <target>Ovo polje je obavezno</target>
-            </trans-unit>
-            <trans-unit id="validation.error.1221559976" approved="yes">
-                <source>Please enter a valid email address</source>
-                <target>Molimo unesite validnu email adresu</target>
-            </trans-unit>
+      <!-- Finisher Options -->
+      <trans-unit id="finisher.EmailToSender.subject" approved="yes">
+        <source>Contact form submission</source>
+        <target>Poslata kontakt forma</target>
+      </trans-unit>
+      <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
+        <source>Contact form submission</source>
+        <target>Poslata kontakt forma</target>
+      </trans-unit>
+      <trans-unit id="finisher.Confirmation.message" approved="yes">
+        <source>Thank you for your message! We will get back to you as soon as possible.</source>
+        <target>Hvala na Vašoj poruci! Odgovorićemo Vam u najkraćem mogućem roku.</target>
+      </trans-unit>
+
+      <!-- Form-specific Translations -->
+      <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
+        <source>Your message has been received</source>
+        <target>Vaša poruka je primljena</target>
+      </trans-unit>
+      <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
+        <source>New contact form submission</source>
+        <target>Nova poruka putem kontakt forme</target>
+      </trans-unit>
+      <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
+        <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
+        <target>Hvala što ste nas kontaktirali! Uskoro ćemo odgovoriti na Vaš upit.</target>
+      </trans-unit>
+
+      <!-- Validation Error Messages -->
+      <trans-unit id="validation.error.1221560910" approved="yes">
+        <source>This field is required</source>
+        <target>Ovo polje je obavezno</target>
+      </trans-unit>
+      <trans-unit id="validation.error.1221559976" approved="yes">
+        <source>Please enter a valid email address</source>
+        <target>Molimo unesite validnu email adresu</target>
+      </trans-unit>
 
     </body>
   </file>

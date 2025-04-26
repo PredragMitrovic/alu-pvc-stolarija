@@ -6,7 +6,7 @@
         <source>My Company</source>
         <target>My Company</target>
       </trans-unit>
-          <trans-unit id="contact.title">
+      <trans-unit id="contact.title">
         <source>Contact Us</source>
         <target>Contact Us</target>
       </trans-unit>
@@ -28,54 +28,94 @@
       </trans-unit>
 
 
+      <!-- Engleski -->
       <trans-unit id="footer.callToAction">
-        <source>Let's create your custom product!</source>
-        <target>Custom aluminum joinery tailored to you</target>
+        <target>Custom aluminum joinery</target>
       </trans-unit>
+
+      <trans-unit id="footer.callToAction45">
+        <target>Custom glass partitions with professional installation</target>
+      </trans-unit>
+
+      <trans-unit id="footer.callToAction44">
+        <target>Custom sliding systems with professional installation</target>
+      </trans-unit>
+
+      <trans-unit id="footer.callToAction43">
+        <target>Custom glass facades with professional installation</target>
+      </trans-unit>
+
+      <trans-unit id="footer.callToAction47">
+        <target>Vacuum glass lifter</target>
+      </trans-unit>
+
+
       <trans-unit id="footer.contactUs">
         <source>Contact us today</source>
         <target>Contact us today</target>
       </trans-unit>
       <trans-unit id="footer.companyDescription">
         <source>Company description</source>
-        <target>ALU-PVC Bogdanović – your reliable partner for aluminum and PVC joinery. We offer custom-made production and professional installation of windows, doors, facades, and accessories. Quality, precision, and customer satisfaction are the foundation of our business.</target>
+        <target>ALU-PVC Bogdanović – your reliable partner for aluminum and PVC joinery. We offer
+          custom-made production and professional installation of windows, doors, facades, and
+          accessories. Quality, precision, and customer satisfaction are the foundation of our
+          business.</target>
       </trans-unit>
       <trans-unit id="footer.navigation">
         <source>Navigation</source>
         <target>Navigation</target>
       </trans-unit>
-      <trans-unit id="footer.nav.home">
-        <source>Home</source>
-        <target>Home</target>
+
+
+      <trans-unit id="footer.1nav">
+        <target>Aluminum windows</target>
       </trans-unit>
-      <trans-unit id="footer.nav.about">
-        <source>About</source>
-        <target>About Us</target>
+      <trans-unit id="footer.2nav">
+        <target>Aluminum doors</target>
       </trans-unit>
-      <trans-unit id="footer.nav.alu">
-        <source>ALU Joinery</source>
-        <target>ALU Joinery</target>
+      <trans-unit id="footer.3nav">
+        <target>PVC doors</target>
       </trans-unit>
-      <trans-unit id="footer.nav.pvc">
-        <source>PVC Joinery</source>
-        <target>PVC Joinery</target>
+      <trans-unit id="footer.4nav">
+        <target>PVC windows</target>
       </trans-unit>
-      <trans-unit id="footer.nav.gallery">
-        <source>Gallery</source>
-        <target>Gallery</target>
+      <trans-unit id="footer.5nav">
+        <target>Aluminum-wood doors</target>
       </trans-unit>
-      <trans-unit id="footer.nav.blog">
-        <source>Novosti</source>
-        <target>News</target>
+      <trans-unit id="footer.6nav">
+        <target>Aluminum-wood windows</target>
       </trans-unit>
-      <trans-unit id="footer.nav.contact">
-        <source>Contact</source>
-        <target>Contact</target>
+      <trans-unit id="footer.7nav">
+        <target>Joinery price calculator</target>
       </trans-unit>
-      <trans-unit id="footer.contact">
-        <source>Contact</source>
-        <target>Contact</target>
+
+      <trans-unit id="footer.1nav45">
+        <target>Glass partitions</target>
       </trans-unit>
+      <trans-unit id="footer.2nav45">
+        <target>Glass walls</target>
+      </trans-unit>
+      <trans-unit id="footer.3nav45">
+        <target>Glass systems</target>
+      </trans-unit>
+      <trans-unit id="footer.4nav45">
+        <target>Glass panels</target>
+      </trans-unit>
+
+      <trans-unit id="footer.1nav44">
+        <target>Sliding glass doors</target>
+      </trans-unit>
+      <trans-unit id="footer.2nav44">
+        <target>Sliding panels</target>
+      </trans-unit>
+      <trans-unit id="footer.3nav44">
+        <target>Sliding walls</target>
+      </trans-unit>
+      <trans-unit id="footer.4nav44">
+        <target>Large sliding glass surfaces</target>
+      </trans-unit>
+
+
       <trans-unit id="footer.address">
         <source>Address</source>
         <target>Belgrade, Serbia</target>
@@ -125,89 +165,89 @@
         <target>Learn More</target>
       </trans-unit>
 
-  <!-- Form General -->
-            <trans-unit id="contactForm.label" approved="yes">
-                <source>Contact Form</source>
-            </trans-unit>
-            <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
-                <source>Submit</source>
-            </trans-unit>
-            
-            <!-- Form Fields -->
-            <trans-unit id="element.text-1.properties.label" approved="yes">
-                <source>Name/Company</source>
-            </trans-unit>
-            <trans-unit id="element.telephone-1.properties.label" approved="yes">
-                <source>Telephone</source>
-            </trans-unit>
-            <trans-unit id="element.email-1.properties.label" approved="yes">
-                <source>Email</source>
-            </trans-unit>
-            <trans-unit id="element.textarea-1.properties.label" approved="yes">
-                <source>Message</source>
-            </trans-unit>
-            
-            <!-- Finisher Options -->
-            <trans-unit id="finisher.EmailToSender.subject" approved="yes">
-                <source>Contact form submission</source>
-            </trans-unit>
-            <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
-                <source>Contact form submission</source>
-            </trans-unit>
-            <trans-unit id="finisher.Confirmation.message" approved="yes">
-                <source>Thank you for your message! We will get back to you as soon as possible.</source>
-            </trans-unit>
-            
-            <!-- Form-specific Translations -->
-            <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
-                <source>Your message has been received</source>
-            </trans-unit>
-            <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
-                <source>New contact form submission</source>
-            </trans-unit>
-            <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
-                <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
-            </trans-unit>
-            
-            <!-- Validation Error Messages -->
-            <trans-unit id="validation.error.1221560910" approved="yes">
-                <source>This field is required</source>
-            </trans-unit>
-            <trans-unit id="validation.error.1221559976" approved="yes">
-                <source>Please enter a valid email address</source>
-            </trans-unit>
+      <!-- Form General -->
+      <trans-unit id="contactForm.label" approved="yes">
+        <source>Contact Form</source>
+      </trans-unit>
+      <trans-unit id="element.Form.renderingOptions.submitButtonLabel" approved="yes">
+        <source>Submit</source>
+      </trans-unit>
 
-            <!-- Form labels -->
-            <trans-unit id="form.contactForm.label">
-                <source>Contact Form</source>
-            </trans-unit>
-            
-            <!-- Email subjects -->
-            <trans-unit id="form.contactForm.email.subject">
-                <source>Contact form submission</source>
-            </trans-unit>
-            
-            <!-- Confirmation message -->
-            <trans-unit id="form.contactForm.confirmation.message">
-                <source>Thank you for your message!</source>
-            </trans-unit>
-            
-            <!-- Form fields -->
-            <trans-unit id="form.contactForm.fields.name.label">
-                <source>Name/Company</source>
-            </trans-unit>
-            
-            <trans-unit id="form.contactForm.fields.telephone.label">
-                <source>Telephone</source>
-            </trans-unit>
-            
-            <trans-unit id="form.contactForm.fields.email.label">
-                <source>Email</source>
-            </trans-unit>
-            
-            <trans-unit id="form.contactForm.fields.message.label">
-                <source>Message</source>
-            </trans-unit>
+      <!-- Form Fields -->
+      <trans-unit id="element.text-1.properties.label" approved="yes">
+        <source>Name/Company</source>
+      </trans-unit>
+      <trans-unit id="element.telephone-1.properties.label" approved="yes">
+        <source>Telephone</source>
+      </trans-unit>
+      <trans-unit id="element.email-1.properties.label" approved="yes">
+        <source>Email</source>
+      </trans-unit>
+      <trans-unit id="element.textarea-1.properties.label" approved="yes">
+        <source>Message</source>
+      </trans-unit>
+
+      <!-- Finisher Options -->
+      <trans-unit id="finisher.EmailToSender.subject" approved="yes">
+        <source>Contact form submission</source>
+      </trans-unit>
+      <trans-unit id="finisher.EmailToReceiver.subject" approved="yes">
+        <source>Contact form submission</source>
+      </trans-unit>
+      <trans-unit id="finisher.Confirmation.message" approved="yes">
+        <source>Thank you for your message! We will get back to you as soon as possible.</source>
+      </trans-unit>
+
+      <!-- Form-specific Translations -->
+      <trans-unit id="contactForm.finisher.EmailToSender.subject" approved="yes">
+        <source>Your message has been received</source>
+      </trans-unit>
+      <trans-unit id="contactForm.finisher.EmailToReceiver.subject" approved="yes">
+        <source>New contact form submission</source>
+      </trans-unit>
+      <trans-unit id="contactForm.finisher.Confirmation.message" approved="yes">
+        <source>Thank you for contacting us! We will respond to your inquiry shortly.</source>
+      </trans-unit>
+
+      <!-- Validation Error Messages -->
+      <trans-unit id="validation.error.1221560910" approved="yes">
+        <source>This field is required</source>
+      </trans-unit>
+      <trans-unit id="validation.error.1221559976" approved="yes">
+        <source>Please enter a valid email address</source>
+      </trans-unit>
+
+      <!-- Form labels -->
+      <trans-unit id="form.contactForm.label">
+        <source>Contact Form</source>
+      </trans-unit>
+
+      <!-- Email subjects -->
+      <trans-unit id="form.contactForm.email.subject">
+        <source>Contact form submission</source>
+      </trans-unit>
+
+      <!-- Confirmation message -->
+      <trans-unit id="form.contactForm.confirmation.message">
+        <source>Thank you for your message!</source>
+      </trans-unit>
+
+      <!-- Form fields -->
+      <trans-unit id="form.contactForm.fields.name.label">
+        <source>Name/Company</source>
+      </trans-unit>
+
+      <trans-unit id="form.contactForm.fields.telephone.label">
+        <source>Telephone</source>
+      </trans-unit>
+
+      <trans-unit id="form.contactForm.fields.email.label">
+        <source>Email</source>
+      </trans-unit>
+
+      <trans-unit id="form.contactForm.fields.message.label">
+        <source>Message</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,5 +1,5 @@
 <!-- Staticki partial header -->
-<f:render partial="header" />
+<f:render partial="header" arguments="{_all}" /> 
 
 <!-- Dinamički sadržaj iz glavne kolone (colPos=0) -->
 <f:cObject typoscriptObjectPath="styles.content.get" />
@@ -8,4 +8,4 @@
 <f:cObject typoscriptObjectPath="lib.content_1" />
 
 <!-- Staticki partial footer -->
-<f:render partial="footer" />
+<f:render partial="footer" arguments="{_all}" />

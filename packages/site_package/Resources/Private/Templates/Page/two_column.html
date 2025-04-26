@@ -2,7 +2,7 @@
 
 <f:section name="content">
   <!-- Staticki header partial -->
-  <f:render partial="header" />
+  <f:render partial="header" arguments="{_all}" />
   <f:cObject typoscriptObjectPath="lib.content_0" />
   <div class="page-project-single">
     <div class="container">
@@ -33,5 +33,5 @@
 
 
 
-  <f:render partial="footer" />
+  <f:render partial="footer" arguments="{_all}" />
 </f:section>
